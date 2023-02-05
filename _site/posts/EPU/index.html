@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
+<meta name="author" content="Gabriel Ammour">
 <meta name="dcterms.date" content="2023-02-04">
+<meta name="description" content="📈">
 
-<title>Gabriel Ammour - Post With Code</title>
+<title>Gabriel Ammour - Using annotate and geom_segment to valuate you times series</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -161,7 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Post With Code</h1>
+      <h1 class="quarto-secondary-nav-title">Using <code>annotate</code> and <code>geom_segment</code> to valuate you times series</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -172,9 +173,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Post With Code</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+      <h1 class="title d-none d-lg-block">Using <code>annotate</code> and <code>geom_segment</code> to valuate you times series</h1>
+                  <div>
+        <div class="description">
+          📈
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">code</div>
                 <div class="quarto-category">analysis</div>
               </div>
@@ -187,7 +192,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Gabriel Ammour </p>
             </div>
     </div>
       
@@ -257,17 +262,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>This is a post with executable code.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This post aims to demonstrate how you can use <code>annotate</code> and <code>geom_segment</code> from <code>ggplot2</code>in order to valuate your time series analysis. This exemple is inspired by the the work of Baker et al., 2016<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>plot_EPU <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(base, <span class="fu">aes</span>(<span class="at">x =</span> Date))<span class="sc">+</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> base<span class="sc">$</span>EPU, <span class="at">color =</span> <span class="st">"EPU"</span>)) <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_date</span>(<span class="at">date_labels =</span> <span class="st">"%Y"</span>, <span class="at">date_breaks =</span> <span class="st">"5 years"</span>)<span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">320</span>))<span class="sc">+</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()<span class="sc">+</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="st">"black"</span>,<span class="at">size =</span> <span class="fl">0.2</span>, <span class="at">linetype =</span> <span class="st">"solid"</span>))<span class="sc">+</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"2020-03-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">300</span>, <span class="at">label =</span> <span class="st">"Covid-19"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>,  <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"2007-01-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">160</span>, <span class="at">label =</span> <span class="st">"Subprime"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>, <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"1986-10-19"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">160</span>, <span class="at">label =</span> <span class="st">"Black Monday"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>, <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"2001-09-11"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">160</span>, <span class="at">label =</span> <span class="st">"9/11"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>, <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"2011-03-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">210</span>, <span class="at">label =</span> <span class="st">"Euro debt crisis"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>, <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"1990-10-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">150</span>, <span class="at">label =</span> <span class="st">"Gulf war I"</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">angle=</span><span class="dv">0</span>, <span class="at">size =</span> <span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"2007-01-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">150</span>, <span class="at">xend =</span> <span class="fu">as.Date</span>(<span class="st">"2008-01-01"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>) , <span class="at">yend=</span><span class="dv">120</span>), <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length=</span><span class="fu">unit</span>(.<span class="dv">12</span>, <span class="st">'cm'</span>),<span class="at">type =</span> <span class="st">"closed"</span>))<span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.Date</span>(<span class="st">"1987-01-19"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>), <span class="at">y =</span> <span class="dv">150</span>, <span class="at">xend =</span> <span class="fu">as.Date</span>(<span class="st">"1987-10-19"</span>, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>) , <span class="at">yend=</span><span class="dv">130</span>), <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length=</span><span class="fu">unit</span>(.<span class="dv">12</span>, <span class="st">'cm'</span>),<span class="at">type =</span> <span class="st">"closed"</span>))<span class="sc">+</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">'bottom'</span>, </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.justification=</span><span class="st">'left'</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.direction=</span><span class="st">'horizontal'</span>)<span class="sc">+</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Date"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Economic policy Uncertainty Index"</span>) <span class="sc">+</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">caption =</span> <span class="st">"Source: Baker, Scott R., Bloom, Nick and Davis, Stephen J., Economic Policy Uncertainty Index for United States"</span>, <span class="at">color =</span> <span class="st">"Legend : "</span>) <span class="sc">+</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">family =</span> <span class="st">"Helvetica"</span>))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>plot_EPU</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p><a href="https://doi.org/10.1093/qje/qjw024">Measuring Economic Policy Uncertainty</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

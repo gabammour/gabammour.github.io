@@ -3,6 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
+      "/posts/EPU/index.html",
+      "/posts/meat_consumption/index.html",
       "/posts/welcome/index.html"
     ]
   }

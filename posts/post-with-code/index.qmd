@@ -1,6 +1,6 @@
 ---
 title: "Post With Code"
-author: "Harlow Malloc"
+author: "Gabriel Ammour"
 date: "2023-02-04"
 categories: [news, code, analysis]
 image: "image.jpg"

@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "my_blog",
+    "title": "Posts",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n📈\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nSchool projects\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 1, 2023\n\n\nGabriel Ammour\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -23,8 +23,43 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "🙋",
     "section": "",
-    "text": "About this blog"
+    "text": "Bonjour,"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "🎓",
+    "section": "",
+    "text": "2022-2024 Master in Applied Econometrics, Nantes University\n2021-2022 Exchange program, Sherbrooke University\n2019-2022 Bachelor degree in Economics, Nantes University"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "🎓",
+    "section": "Skills",
+    "text": "Skills\n```{r}\ngabriel %>% intermediate user\n```\n```{python}\nimport gabriel as beginner\n```"
+  },
+  {
+    "objectID": "cv.html#languages",
+    "href": "cv.html#languages",
+    "title": "🎓",
+    "section": "Languages",
+    "text": "Languages\n🇲🇫 Bilingual (Native thong)\n🇺🇲 C1 TOEIC, 980/990\n… Also, fluent in \\(\\LaTeX\\)"
+  },
+  {
+    "objectID": "posts/meat_consumption/index.html",
+    "href": "posts/meat_consumption/index.html",
+    "title": "Studying meat consumption among college students",
+    "section": "",
+    "text": "Context\n\n\nMethods\n\n\nResults"
+  },
+  {
+    "objectID": "posts/EPU/index.html",
+    "href": "posts/EPU/index.html",
+    "title": "Using annotate and geom_segment to valuate you times series",
+    "section": "",
+    "text": "Purpose\nThis post aims to demonstrate how you can use annotate and geom_segment from ggplot2in order to valuate your time series analysis. This exemple is inspired by the the work of Baker et al., 20161.\n\n\nCode\nplot_EPU <- ggplot(base, aes(x = Date))+\n  geom_line(aes(y = base$EPU, color = \"EPU\")) +\n  scale_x_date(date_labels = \"%Y\", date_breaks = \"5 years\")+\n  scale_y_continuous(limits = c(0,320))+\n  theme_light()+\n  theme(axis.line = element_line(colour = \"black\",size = 0.2, linetype = \"solid\"))+\n  annotate(\"text\", x = as.Date(\"2020-03-01\", format = \"%Y-%m-%d\"), y = 300, label = \"Covid-19\", color = \"black\", angle=0,  size = 2)+\n  annotate(\"text\", x = as.Date(\"2007-01-01\", format = \"%Y-%m-%d\"), y = 160, label = \"Subprime\", color = \"black\", angle=0, size = 2)+\n  annotate(\"text\", x = as.Date(\"1986-10-19\", format = \"%Y-%m-%d\"), y = 160, label = \"Black Monday\", color = \"black\", angle=0, size = 2)+\n  annotate(\"text\", x = as.Date(\"2001-09-11\", format = \"%Y-%m-%d\"), y = 160, label = \"9/11\", color = \"black\", angle=0, size = 2)+\n  annotate(\"text\", x = as.Date(\"2011-03-01\", format = \"%Y-%m-%d\"), y = 210, label = \"Euro debt crisis\", color = \"black\", angle=0, size = 2)+\n  annotate(\"text\", x = as.Date(\"1990-10-01\", format = \"%Y-%m-%d\"), y = 150, label = \"Gulf war I\", color = \"black\", angle=0, size = 2)+\n  geom_segment(aes(x = as.Date(\"2007-01-01\", format = \"%Y-%m-%d\"), y = 150, xend = as.Date(\"2008-01-01\", format = \"%Y-%m-%d\") , yend=120), arrow = arrow(length=unit(.12, 'cm'),type = \"closed\"))+\n  geom_segment(aes(x = as.Date(\"1987-01-19\", format = \"%Y-%m-%d\"), y = 150, xend = as.Date(\"1987-10-19\", format = \"%Y-%m-%d\") , yend=130), arrow = arrow(length=unit(.12, 'cm'),type = \"closed\"))+\n  theme(legend.position='bottom', \n        legend.justification='left',\n        legend.direction='horizontal')+\n  xlab(\"Date\") + ylab(\"Economic policy Uncertainty Index\") +\n  labs(caption = \"Source: Baker, Scott R., Bloom, Nick and Davis, Stephen J., Economic Policy Uncertainty Index for United States\", color = \"Legend : \") +\n  theme(text = element_text(family = \"Helvetica\"))\n\nplot_EPU\n\n\n\n\n\n\n\n\n\n\nFootnotes\n\n\nMeasuring Economic Policy Uncertainty.↩︎"
   }
 ]

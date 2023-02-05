@@ -1,6 +1,6 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Gabriel Ammour"
 date: "2023-02-01"
 categories: [news]
 ---

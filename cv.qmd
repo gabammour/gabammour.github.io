@@ -1,0 +1,31 @@
+---
+title: "🎓"
+about:
+  template: solana
+---
+
+## Education
+
+`2022-2024` Master in Applied Econometrics, *Nantes University*
+
+`2021-2022` Exchange program, *Sherbrooke University*
+
+`2019-2022` Bachelor degree in Economics, *Nantes University*
+
+## Skills
+
+``` {{r}}
+gabriel %>% intermediate user
+```
+
+``` {{python}}
+import gabriel as beginner
+```
+
+## Languages
+
+ 🇲🇫 Bilingual (Native thong)
+
+ 🇺🇲 C1 `TOEIC, 980/990`
+
+... Also, fluent in $\LaTeX$
