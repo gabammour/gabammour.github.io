@@ -1,9 +1,11 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  reader-mode: true
+  reader-mode: false
   page-footer:
+    background: "#FFFFF6"
     left: "Copyright 2023, Gabriel Ammour"
     center:
       - icon: github
@@ -13,7 +15,16 @@ website:
   title: "**Gabriel Ammour**"
   navbar:
     foreground: "#191970"
-    background: light
+    background: "#FEF9E7"
+    left: 
+      - text: "About me"
+        file: about.qmd
+      - text: "Curriculum Vitae"
+        file: cv.qmd
+      - text: "My blog"
+        file: index.qmd 
+      - text: Reach me
+        file: contact.qmd
     right:
       - icon: github
         href: https://github.com/
@@ -22,6 +33,7 @@ website:
 
   sidebar:
     foreground: "#191970"
+    background: "#FFFFF6"
     style: "floating"
     search: true
     contents:
@@ -29,16 +41,20 @@ website:
         contents:
         - about.qmd
         - cv.qmd
+        - contact.qmd
       - section: "Blog"
         contents:
         - index.qmd
 format:
   html:
+    smooth-scroll: true
     theme: literia
     mainfont: helvetica
     fontcolor: "#191970"
     linkcolor: "#663399"
+    backgroundcolor: "#FFFFF6"
     monofont: helvetica
     css: styles.css
+   
 
 editor: visual

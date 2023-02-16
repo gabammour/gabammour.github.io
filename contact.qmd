@@ -1,0 +1,10 @@
+---
+title: "📧"
+about:
+  template: solana
+---
+# Contact
+
+For any inquiries, collaboration opportunities, or just to say hi, you can reach me at :
+
+`gabriel.ammour@gmail.com`
