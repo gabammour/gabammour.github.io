@@ -3,7 +3,7 @@
 This blog has been made in the context of a class appointment. It is still under construction and may undergo changes and updates in the future.
  
 # Purpose
-The purpose of this blog is to provide an insightful and educational platform for anyone who is interested in my journey as a Master’s student in Applied Econometrics. I hope to [insert what you hope to accomplish with your blog].
+The purpose of this blog is to provide an insightful and educational platform for anyone who is interested in my journey as a Master’s student in Applied Econometrics.
 
 # Technologies Used
 
