@@ -3,7 +3,6 @@ project:
   output-dir: docs
 
 website:
-  google-analytics: "G-6RB86XNH1F"
   reader-mode: false
   page-footer:
     background: "#FFFFF6"
