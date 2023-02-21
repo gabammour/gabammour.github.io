@@ -9,9 +9,9 @@
   {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
-    "title": "Heron’s library",
+    "title": "Sierpiński triangle",
     "section": "",
-    "text": "Heron’s formula is a formula for finding the area of a triangle when you know the lengths of its three sides. It is named after the ancient Greek mathematician, Hero of Alexandria, who first described it.\n\\[A = \\sqrt{s(s-a)(s-b)(s-c)}\\]\nwhere \\(a\\), \\(b\\), and \\(c\\) are the lengths of the sides of the triangle, \\(s\\) is the semiperimeter of the triangle, which is defined as \\(s = \\frac{1}{2}(a + b + c)\\), and \\(A\\) is the area of the triangle. The reason Heron’s formula works is that it is based on the concept of the “Heronian triangle,”which is a triangle with integer sides and integer area. Heron’s formula gives the exact area of a Heronian triangle, and it turns out that every triangle can be split into two Heronian triangles. So, by using Heron’s formula to find the area of each of these two triangles and adding the results, you get the area of the original triangle."
+    "text": "Heron’s formula is a formula for finding the area of a triangle when you know the lengths of its three sides. It is named after the ancient Greek mathematician, Hero of Alexandria, who first described it.\n\\[A = \\sqrt{s(s-a)(s-b)(s-c)}\\]\nwhere \\(a\\), \\(b\\), and \\(c\\) are the lengths of the sides of the triangle, \\(s\\) is the semiperimeter of the triangle, which is defined as \\(s = \\frac{1}{2}(a + b + c)\\), and \\(A\\) is the area of the triangle. The reason Heron’s formula works is that it is based on the concept of the “Heronian triangle,”which is a triangle with integer sides and integer area. Heron’s formula gives the exact area of a Heronian triangle, and it turns out that every triangle can be split into two Heronian triangles. So, by using Heron’s formula to find the area of each of these two triangles and adding the results, you get the area of the original triangle.\n\n\nThe package must be install through my personal GitHub account. Install the library remotes and then :\n\nremotes::install_github(\"gabammour/heron\")\nlibrary(heron)\n\nFor more information on this package, use :\n\n?heron"
   },
   {
     "objectID": "posts/post-with-code/index.html#how-can-i-install-it",
@@ -75,5 +75,12 @@
     "title": "🎓",
     "section": "Languages",
     "text": "Languages\n🇲🇫 Bilingual (Native thong)\n🇺🇲 C1 TOEIC, 980/990\n🇪🇸 Notion\n… Also, fluent in \\(\\LaTeX\\)\nFull CV"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#sierpiński-triangle",
+    "href": "posts/post-with-code/index.html#sierpiński-triangle",
+    "title": "Sierpiński triangle",
+    "section": "Sierpiński triangle",
+    "text": "Sierpiński triangle\n\n\n\n\nFirst iteration\n\n\n\n\n\n[1] \"The triangle area is : 0.19\"\n\n\n\n\nSecond iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.14\"\n\n\n\n\nThird iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.11\"\n\n\n\n\nFourth iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.0791\""
   }
 ]

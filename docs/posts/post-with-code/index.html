@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Heron’s library</h1>
+      <h1 class="quarto-secondary-nav-title">Sierpiński triangle</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -182,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Heron’s library</h1>
+      <h1 class="title d-none d-lg-block">Sierpiński triangle</h1>
                   <div>
         <div class="description">
           📐
@@ -273,15 +273,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#herons-library" id="toc-herons-library" class="nav-link active" data-scroll-target="#herons-library">Heron’s library</a></li>
+  <li><a href="#herons-library" id="toc-herons-library" class="nav-link active" data-scroll-target="#herons-library">Heron’s library</a>
+  <ul class="collapse">
   <li><a href="#how-can-i-install-it" id="toc-how-can-i-install-it" class="nav-link" data-scroll-target="#how-can-i-install-it">How can I install it ?</a></li>
-  <li><a href="#triangle" id="toc-triangle" class="nav-link" data-scroll-target="#triangle">Triangle</a>
+  </ul></li>
+  <li><a href="#sierpiński-triangle" id="toc-sierpiński-triangle" class="nav-link" data-scroll-target="#sierpiński-triangle">Sierpiński triangle</a>
   <ul class="collapse">
   <li><a href="#first-iteration" id="toc-first-iteration" class="nav-link" data-scroll-target="#first-iteration">First iteration</a></li>
   <li><a href="#second-iteration" id="toc-second-iteration" class="nav-link" data-scroll-target="#second-iteration">Second iteration</a></li>
   <li><a href="#third-iteration" id="toc-third-iteration" class="nav-link" data-scroll-target="#third-iteration">Third iteration</a></li>
   <li><a href="#fourth-iteration" id="toc-fourth-iteration" class="nav-link" data-scroll-target="#fourth-iteration">Fourth iteration</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -297,9 +298,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Heron’s formula is a formula for finding the area of a triangle when you know the lengths of its three sides. It is named after the ancient Greek mathematician, Hero of Alexandria, who first described it.</p>
 <p><span class="math display">\[A = \sqrt{s(s-a)(s-b)(s-c)}\]</span></p>
 <p>where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> are the lengths of the sides of the triangle, <span class="math inline">\(s\)</span> is the semiperimeter of the triangle, which is defined as <span class="math inline">\(s = \frac{1}{2}(a + b + c)\)</span>, and <span class="math inline">\(A\)</span> is the area of the triangle. The reason Heron’s formula works is that it is based on the concept of the “Heronian triangle,”which is a triangle with integer sides and integer area. Heron’s formula gives the exact area of a Heronian triangle, and it turns out that every triangle can be split into two Heronian triangles. So, by using Heron’s formula to find the area of each of these two triangles and adding the results, you get the area of the original triangle.</p>
-</section>
-<section id="how-can-i-install-it" class="level2">
-<h2 class="anchored" data-anchor-id="how-can-i-install-it">How can I install it ?</h2>
+<section id="how-can-i-install-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-i-install-it">How can I install it ?</h3>
 <p>The package must be install through my personal GitHub account. Install the library <code>remotes</code> and then :</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gabammour/heron"</span>)</span>
@@ -310,8 +310,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>?heron</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="triangle" class="level2">
-<h2 class="anchored" data-anchor-id="triangle">Triangle</h2>
+</section>
+<section id="sierpiński-triangle" class="level2">
+<h2 class="anchored" data-anchor-id="sierpiński-triangle">Sierpiński triangle</h2>
 <div class="cell">
 
 </div>
@@ -358,10 +359,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>[1] "The triangle area is :  0.0791"</code></pre>
 </div>
 </div>
-<p>On s’apperçoit bien de la décroissance des aires.</p>
-</section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
 
 
 </section>
