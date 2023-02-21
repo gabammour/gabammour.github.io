@@ -1,7 +1,7 @@
 ---
     title: "Sierpiński triangle"
     author: "Gabriel Ammour"
-    date: "2023-02-04"
+    date: "2023-02-21"
     image: Sierpinski.png
     categories: [School projects]
     description: "📐"
