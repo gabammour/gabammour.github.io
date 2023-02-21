@@ -18,7 +18,7 @@ $$A = \sqrt{s(s-a)(s-b)(s-c)}$$
 
 where $a$, $b$, and $c$ are the lengths of the sides of the triangle, $s$ is the semiperimeter of the triangle, which is defined as $s = \frac{1}{2}(a + b + c)$, and $A$ is the area of the triangle. The reason Heron's formula works is that it is based on the concept of the "Heronian triangle,"which is a triangle with integer sides and integer area. Heron's formula gives the exact area of a Heronian triangle, and it turns out that every triangle can be split into two Heronian triangles. So, by using Heron's formula to find the area of each of these two triangles and adding the results, you get the area of the original triangle.
 
-## How can I install it ?
+### How can I install it ?
 
 The package must be install through my personal GitHub account. Install the library `remotes` and then :
 
@@ -33,7 +33,7 @@ For more information on this package, use :
 ?heron
 ```
 
-## Triangle
+## Sierpiński triangle
 
 ```{r}
 #| echo: false
@@ -72,6 +72,3 @@ tar_read("plot_4")
 paste("The triangle area is : ", round(tar_read("Aire_4"),4))
 ```
 
-On s'apperçoit bien de la décroissance des aires.
-
-### 
