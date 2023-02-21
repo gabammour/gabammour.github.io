@@ -2,6 +2,7 @@
 title: "Using `annotate` and `geom_segment` to valuate you times series"
 author: "Gabriel Ammour"
 date: "2023-02-04"
+image: finance.png
 categories: [code, analysis]
 description: "📈"
 format: 
@@ -17,20 +18,21 @@ Economic policy uncertainty (EPU) has been a popular topic among economists, pol
 
 # The Economic Policy Uncertainty Index (EPU)[^1]
 
+[^1]: [Measuring Economic Policy Uncertainty](https://doi.org/10.1093/qje/qjw024).
+
 The EPU index was first introduced by Scott R. Baker, Nick Bloom, and Stephen J. Davis in a seminal paper published in 2012. The index is based on the frequency of newspaper articles that mention policy-related economic uncertainty. The authors argue that this measurement is an accurate proxy for economic policy uncertainty, as media coverage of policy-related uncertainty reflects the opinions and views of experts, market participants, and the general public.
 
 # Plotting of the EPU Index
- 
+
 The R code provided in this article uses the `ggplot2` library to visualize the EPU index over time. The code starts by defining the data source (base) and creating a plot object with the x-axis representing the date and the y-axis representing the EPU index. The plot is then decorated with various elements to enhance its readability and aesthetic appeal.
 
 The `scale_x_date` function is used to set the date format and to break the x-axis into intervals of 5 years. The `scale_y_continuous` function sets the limits of the y-axis to a range of 0 to 320. The `theme_light` function sets the plot's overall theme to a light color palette, while the theme function sets the color, size, and type of the axis lines.
 
 The `annotate` function is used to add text annotations to the plot, highlighting important economic events such as the subprime crisis, the 9/11 attacks, and the Covid-19 pandemic. The `geom_segment` function is used to add arrows to the plot, showing the direction and magnitude of the changes in the EPU index. The theme function is then used to set the legend position, justification, direction, and to add a caption to the plot.
 
-# Conclusion 
+# Conclusion
 
 The R code provided in this article is a simple yet effective way of visualizing the EPU index and its relationship with significant economic events. The plot highlights the impact of various events on the uncertainty index, making it a useful tool for economists, policymakers, and market participants to gain insights into the economic policy environment.
-
 
 ```{r, echo=FALSE, message=FALSE}
 library(ggplot2)
@@ -79,7 +81,3 @@ plot_EPU <- ggplot(base, aes(x = Date)) +
 
 plot_EPU
 ```
-
-
-
-[^1]: [Measuring Economic Policy Uncertainty](https://doi.org/10.1093/qje/qjw024).

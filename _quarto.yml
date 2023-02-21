@@ -49,13 +49,11 @@ format:
   html:
     smooth-scroll: true
     theme: literia
-    mainfont: helvetica
+    mainfont: sans-serif
     fontcolor: "#191970"
     linkcolor: "#663399"
     backgroundcolor: "#FFFFF6"
-    monofont: helvetica
+    monofont: sans-serif
     css: styles.css
-    license: CC BY-SA
-   
-
+    
 editor: visual

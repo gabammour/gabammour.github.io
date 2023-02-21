@@ -1,13 +1,16 @@
 ---
 title: "🙋🏽"
-image: profile.jpg
+about: 
+  template: jolla
+  id: welcome
+image: profile.JPEG
 ---
 
-# About me
-
-
-I am Gabriel, a first-year Master's student in Applied Econometrics at Nantes University. My ultimate goal is to earn a PhD and make a difference in the world of research and education. My passion for these subjects drives me to strive for excellence in my studies. In particular, I am interested in working on topics such as behavioral economics, health and the environment. 
+I am Gabriel, a first-year Master's student in Applied Econometrics at Nantes University. My ultimate goal is to earn a PhD and make a difference in the world of research and education. My passion for these subjects drives me to strive for excellence in my studies. In particular, I am interested in working on topics such as behavioral economics, health and the environment.
 
 In my blog, I aim to provide an insightful and educational platform for anyone who is interested in my journey as a Master's student in Applied Econometrics. I will be sharing regular updates on my studies, as well as tips and advice on topics such as data science, academic writing, and more. Whether you're a fellow student, a professional in a related field, or simply someone with a passion for learning, I hope that my blog will be a valuable resource for you. So, feel free to check it out and join me on this journey.
 
-Have a great day ! 😇
+Have a great day !
+
+#  😇
+

@@ -35,3 +35,5 @@ import gabriel as beginner
 🇪🇸 Notion
 
 ... Also, fluent in $\LaTeX$
+
+[Full CV](CV - Gabriel Ammour-4.pdf)
