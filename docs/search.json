@@ -81,6 +81,6 @@
     "href": "posts/post-with-code/index.html#sierpiński-triangle",
     "title": "Sierpiński triangle",
     "section": "Sierpiński triangle",
-    "text": "Sierpiński triangle\n\n\n\n\nFirst iteration\n\n\n\n\n\n[1] \"The triangle area is : 0.19\"\n\n\n\n\nSecond iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.14\"\n\n\n\n\nThird iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.11\"\n\n\n\n\nFourth iteration\n\n\n\n\n\n[1] \"The triangle area is :  0.0791\""
+    "text": "Sierpiński triangle\nThe Sierpiński triangle is a fractal that is formed through an iterative process known as the chaos game. Starting with a single equilateral triangle, each subsequent iteration involves selecting a random vertex of the triangle and placing a new triangle with sides that are half the length of the original triangle. The new triangle is positioned such that its base coincides with the side opposite the selected vertex of the previous triangle.\n\n\n\n\nFirst iteration\n\n\n\n\n\n[1] \"The triangle area is 0.19\"\n\n\n\n\nSecond iteration\n\n\n\n\n\n[1] \"The triangle area is 0.14\"\n\n\n\n\nThird iteration\n\n\n\n\n\n[1] \"The triangle area is 0.11\"\n\n\n\n\nFourth iteration\n\n\n\n\n\n[1] \"The triangle area is 0.0791\""
   }
 ]

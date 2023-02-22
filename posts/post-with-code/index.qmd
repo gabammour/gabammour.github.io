@@ -35,6 +35,8 @@ For more information on this package, use :
 
 ## Sierpiński triangle
 
+The Sierpiński triangle is a fractal that is formed through an iterative process known as the chaos game. Starting with a single equilateral triangle, each subsequent iteration involves selecting a random vertex of the triangle and placing a new triangle with sides that are half the length of the original triangle. The new triangle is positioned such that its base coincides with the side opposite the selected vertex of the previous triangle.
+
 ```{r}
 #| echo: false
 library(targets)
@@ -45,7 +47,7 @@ library(targets)
 ```{r}
 #| echo: false
 tar_read("plot_1")
-paste("The triangle area is :", round(tar_read("Aire_1"),2))
+paste("The triangle area is", round(tar_read("Aire_1"),2))
 ```
 
 ### Second iteration
@@ -53,7 +55,7 @@ paste("The triangle area is :", round(tar_read("Aire_1"),2))
 ```{r}
 #| echo: false
 tar_read("plot_2")
-paste("The triangle area is : ", round(tar_read("Aire_2"),2))
+paste("The triangle area is", round(tar_read("Aire_2"),2))
 ```
 
 ### Third iteration
@@ -61,7 +63,7 @@ paste("The triangle area is : ", round(tar_read("Aire_2"),2))
 ```{r}
 #| echo: false
 tar_read("plot_3")
-paste("The triangle area is : ", round(tar_read("Aire_3"),2))
+paste("The triangle area is", round(tar_read("Aire_3"),2))
 ```
 
 ### Fourth iteration
@@ -69,6 +71,6 @@ paste("The triangle area is : ", round(tar_read("Aire_3"),2))
 ```{r}
 #| echo: false
 tar_read("plot_4")
-paste("The triangle area is : ", round(tar_read("Aire_4"),4))
+paste("The triangle area is", round(tar_read("Aire_4"),4))
 ```
 
