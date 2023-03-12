@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Posts",
     "section": "",
-    "text": "School projects\n\n\n\n\n📐\n\n\n\n\n\n\nFeb 21, 2023\n\n\nGabriel Ammour\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n📈\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nSchool projects\n\n\n\n\n🥩\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour, Théo Bouedo, Noa Le Roux\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "School projects\n\n\n\n\n🐙\n\n\n\n\n\n\nMar 12, 2023\n\n\nGabriel Ammour, Théo Bouedo\n\n\n10 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nSchool projects\n\n\n\n\n📐\n\n\n\n\n\n\nFeb 21, 2023\n\n\nGabriel Ammour\n\n\n1 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n📈\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nSchool projects\n\n\n\n\n🥩\n\n\n\n\n\n\nFeb 4, 2023\n\n\nGabriel Ammour, Théo Bouedo, Noa Le Roux\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -82,5 +82,26 @@
     "title": "Sierpiński triangle",
     "section": "Sierpiński triangle",
     "text": "Sierpiński triangle\nThe Sierpiński triangle is a fractal that is formed through an iterative process known as the chaos game. Starting with a single equilateral triangle, each subsequent iteration involves selecting a random vertex of the triangle and placing a new triangle with sides that are half the length of the original triangle. The new triangle is positioned such that its base coincides with the side opposite the selected vertex of the previous triangle.\n\n\n\n\nFirst iteration\n\n\n\n\n\n[1] \"The triangle area is 0.19\"\n\n\n\n\nSecond iteration\n\n\n\n\n\n[1] \"The triangle area is 0.14\"\n\n\n\n\nThird iteration\n\n\n\n\n\n[1] \"The triangle area is 0.11\"\n\n\n\n\nFourth iteration\n\n\n\n\n\n[1] \"The triangle area is 0.0791\""
+  },
+  {
+    "objectID": "posts/GitHub-Essay/Index.html",
+    "href": "posts/GitHub-Essay/Index.html",
+    "title": "Platform Essay : GitHub",
+    "section": "",
+    "text": "This essay was written for the purpose of the course of Economie numerique given by Raphael Suire in the Master ECAP, IAE Nantes. You can find the pdf version of it here"
+  },
+  {
+    "objectID": "posts/GitHub-Essay/Index.html#value-proposition",
+    "href": "posts/GitHub-Essay/Index.html#value-proposition",
+    "title": "Platform Essay : GitHub",
+    "section": "Value proposition",
+    "text": "Value proposition\nGitHub’s value proposition is based on four primary pillars. The foremost and most critical of these pillars is collaboration. Through the use of powerful tools such as repositories, GitHub provides an environment in which multiple developers can work simultaneously on the same codebase. Simply put, a repository is a virtual space where individuals can store and manage their code, similar to a folder on a local computer. However, in this case, the repository is located on GitHub servers, which are hosted in the cloud. If a repository is public, any user can access and modify its contents, fostering a sense of collaboration and teamwork.\nThe second pillar of GitHub is version control. The platform’s version control system, Git, enables developers to track changes to code over time, facilitating the identification and correction of bugs and errors.\nThe third pillar is the community. GitHub boasts a vast and active community of developers who contribute to open-source projects, share code, and provide support to one another. This sense of community is a crucial aspect of GitHub’s value proposition, as it promotes knowledge-sharing and facilitates the exchange of ideas.\nFinally, the fourth pillar of GitHub is integration. The platform can be seamlessly integrated with a broad range of third-party tools and services, creating a central hub for managing the entire software development workflow. This feature streamlines the development process, making it more efficient and effective."
+  },
+  {
+    "objectID": "posts/GitHub-Essay/Index.html#revenue-model",
+    "href": "posts/GitHub-Essay/Index.html#revenue-model",
+    "title": "Platform Essay : GitHub",
+    "section": "Revenue model",
+    "text": "Revenue model\nAs with many pure players, GitHub provides both free and paid services, operating on a freemium model. This approach is a common business strategy employed by software companies and social media platforms, as it enables them to garner a large user base before monetizing their offerings. Specifically, GitHub’s platform offers a complimentary version that permits users to create an unlimited number of public repositories and collaborate with other developers on open-source projects. However, this free service is subject to limitations in storage capacity.\nThe second offering, the GitHub Pro version, works as an extension of the free iteration, increasing the user experience by expanding storage capacity and introducing features such as GitHub Support via email, GitHub Pages, and Protected branches. Although the initial two products are oriented towards single users, GitHub also provides the same two versions for teams and organizations. The team version is analogous to the pro version, but it enables teams to access private repositories and expand their membership. Meanwhile, the organization version mirrors the free version but caters to organizations. We may also mention that GitHub offers a student developer pack that provides free access to GitHub Pro for students.\nLastly, GitHub’s ultimate offering, GitHub Enterprise, is the most expensive and primarily targets large companies. It comes with a host of features, such as SAML single sign-on, advanced security measures, and GitHub Enterprise Support.\nFurthermore, GitHub provides several paid services, including GitHub Actions, GitHub Packages, and GitHub Marketplace. GitHub Actions empowers developers to automate their software development workflows, streamlining the process and saving time. Meanwhile, GitHub Packages is a service that enables developers to store and share code packages with other developers, enhancing collaboration and productivity. Finally, GitHub Marketplace offers a platform that enables developers to explore and install third-party tools and services that integrate with GitHub, broadening the scope and functionality of the platform. The last example of these additional services is GitHub Copilot, an AI pair programmer that helps developers write code faster by providing autocomplete suggestions."
   }
 ]
