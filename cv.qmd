@@ -36,4 +36,4 @@ import gabriel as beginner
 
 ... Also, fluent in $\LaTeX$
 
-[Full CV](CV - Gabriel Ammour-4.pdf)
+[Full CV](CV.pdf)
