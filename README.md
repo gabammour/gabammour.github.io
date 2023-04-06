@@ -9,7 +9,7 @@ The purpose of this blog is to provide an insightful and educational platform fo
 
 This blog has been built using [Quarto](https://quarto.org) and [RStudio](https://posit.co/download/rstudio-desktop/).
 
-To view this blog, https://gabammour.github.io/my_blog/
+To view this blog, https://gabammour.github.io/
 
 # Contact Information
 
