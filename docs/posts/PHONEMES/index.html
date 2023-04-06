@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Gabriel Ammour, Théo Bouedo">
+<meta name="dcterms.date" content="2023-04-06">
+<meta name="description" content="🔉">
+
+<title>Gabriel Ammour - Une analyse du lien entre phonèmes et fréquences sonores</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title"><strong>Gabriel Ammour</strong></span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../about.html" aria-current="page">About me</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html">Curriculum Vitae</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">My blog</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html">Reach me</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/gabriel-ammour-7263291b8"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Une analyse du lien entre phonèmes et fréquences sonores</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title d-none d-lg-block">Une analyse du lien entre phonèmes et fréquences sonores</h1>
+                  <div>
+        <div class="description">
+          🔉
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">School projects</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Gabriel Ammour, <a href="https://lovely-dolphin-e68198.netlify.app/my_work.html">Théo Bouedo</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 6, 2023</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">About me</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../about.html" class="sidebar-item-text sidebar-link">🙋🏽</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../cv.html" class="sidebar-item-text sidebar-link">🎓</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../contact.html" class="sidebar-item-text sidebar-link">📧</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Blog</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">Posts</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#statistiques-descriptives" id="toc-statistiques-descriptives" class="nav-link" data-scroll-target="#statistiques-descriptives">Statistiques descriptives</a></li>
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">Classification</a></li>
+  <li><a href="#discrimination" id="toc-discrimination" class="nav-link" data-scroll-target="#discrimination">Discrimination</a>
+  <ul class="collapse">
+  <li><a href="#analyse-factorielle-discriminante" id="toc-analyse-factorielle-discriminante" class="nav-link" data-scroll-target="#analyse-factorielle-discriminante">Analyse Factorielle discriminante</a>
+  <ul class="collapse">
+  <li><a href="#variables-les-plus-discriminantes" id="toc-variables-les-plus-discriminantes" class="nav-link" data-scroll-target="#variables-les-plus-discriminantes">Variables les plus discriminantes</a></li>
+  </ul></li>
+  <li><a href="#pls-da" id="toc-pls-da" class="nav-link" data-scroll-target="#pls-da">PLS-DA</a>
+  <ul class="collapse">
+  <li><a href="#mesures-de-performances" id="toc-mesures-de-performances" class="nav-link" data-scroll-target="#mesures-de-performances">Mesures de performances</a></li>
+  <li><a href="#contribution-aux-composantes" id="toc-contribution-aux-composantes" class="nav-link" data-scroll-target="#contribution-aux-composantes">Contribution aux composantes</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Les données présentées proviennent de l’ouvrage de référence intitulé “Elements of Statistical Learning” de Hastie, Tibshirani et Friedman (2009). Elles concernent l’analyse des phonèmes et ont été extraites de la base de données TIMIT, qui est une ressource largement utilisée dans la recherche en reconnaissance vocale. Le phonème est l’unité sonore de base de la langue parlée. C’est la plus petite unité distinctive de son qui permet de distinguer un mot d’un autre dans une langue donnée. Le but du projet est de discriminer cinq phonèmes, transcrits comme suit : <em>sh</em> pour “she”, <em>dcl</em> pour “dark”, <em>iy</em> pour la voyelle dans “she”, <em>aa</em> pour la voyelle dans “dark”, et <em>ao</em> pour la première voyelle dans “water”.</p>
+<p>Le corpus de données se compose de 50 discours enregistrés, à partir desquels ont été sélectionnées 4509 trames vocales d’une durée de 32 ms, comportant environ deux exemples de chaque phonème pour chaque locuteur. Le tableau de données obtenu contient 4509 lignes et 256 colonnes, intitulées “x.1” - “x.256”, qui correspondent aux valeurs du log-périodogramme mesurées sur les différentes trames. Les deux dernières colonnes indiquent le phonème prononcé et le locuteur. Chaque trame est identifiée comme appartenant à l’ensemble d’apprentissage (train) ou de test (test), en fonction de la colonne locuteur. Pour faire plus simple, nous pouvons dire que chaque ligne représente une trame vocale et que l’ensemble des colonnes représentent le spectre sonore de chaque trame. Ainsi, nous retrouvons 256 colonnes car le periodogramme s’étends sur une plage de 256 Hz. Par ailleurs, nous pouvons préciser que sur les 4509 observations, 25.8% d’entre elles sont <em>iy</em>, 15.4% sont <em>aa</em>, 19.3% sont <em>sh</em>, 22.7% sont <em>ao</em> et 16.8 sont <em>dcl</em>.</p>
+</section>
+<section id="statistiques-descriptives" class="level1">
+<h1>Statistiques descriptives</h1>
+<p>Étant donné que notre base de données comporte un nombre significatif de lignes et de colonnes, il n’est pas judicieux d’effectuer une analyse descriptive détaillée pour chacune de nos variables. Néanmoins, nous pouvons opter pour la projection des cinq phonèmes distincts afin d’obtenir une première impression des similarités potentielles entre chaque phonème. En examinant les valeurs moyennes projetées de chaque phonème sur le périodogramme, nous pouvons observer certaines tendances dans les comportements acoustiques. Il est notable que l’intensité moyenne de chaque phonème est plus élevée dans les basses fréquences, situées au début du spectre sonore. Concernant les raisons de cette observation, il est possible d’émettre l’hypothèse que cela soit dû au fait que les phonèmes étudiés sont des voyelles. Par ailleurs, le phonème <em>dcl</em> semble se distinguer des autres, se caractérisant par des niveaux d’intensité plus faibles dès le début du spectre, comparativement aux autres phonèmes. Ce dernier est notamment opposé au phonème <em>sh</em> en termes d’intensité sonore.</p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mean_data, <span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> value, <span class="at">color =</span> phoneme, <span class="at">group =</span> phoneme)) <span class="sc">+</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>), <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>)) <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Variable (Periodogram)"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Valeur moyenne"</span>) <span class="sc">+</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-period" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-period-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Log-periodogramme moyen par valeur et par phonème</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Avec la fonction <code>plot.PCA</code> de la bibliothèque <code>FactoMineR</code>, nous sommes en mesure de représenter chaque observation sur un plan bidimensionnel et de regrouper les phonèmes par couleur. Dans ce contexte, la <a href="#fig-pca">Figure&nbsp;2</a> nous permet de confirmer que chaque phonème occupe effectivement la même position dans le spectre sonore. Ce graphique nous permet également de différencier clairement les phonèmes les uns des autres. Par exemple, il est possible de constater que les sons <em>sh</em> et <em>dcl</em> sont situés à des extrémités opposées. Nous observons également que les voyelles <em>aa</em>, <em>ao</em> et <em>sh</em> sont très proches les unes des autres, indiquant que ces trois phonèmes présentent des similarités en termes de fréquence sur le périodogramme.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-pca" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-pca-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure 2: Projection graphique des individus</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="classification" class="level1">
+<h1>Classification</h1>
+<p>La classification a pour objectif de diviser un ensemble de données en groupes distincts et homogènes. Ces groupes, souvent appelés clusters, se composent d’éléments présentant des caractéristiques similaires. Dans cette étude, nous utiliserons une classification hiérarchique pour partitionner notre base de données en divers ensembles. Cette classification reposera sur la méthode de Ward, l’une des méthodes les plus populaires, permettant notamment de minimiser l’inertie intra-classe et de maximiser l’inertie inter-classe. Cette approche nous permettra, <em>in fine</em>, d’obtenir des sous-ensembles plus homogènes. Le diagramme à barres et le dendrogramme de la figure <a href="#fig-classification">Figure&nbsp;3</a> révèlent trois partitions, c’est-à-dire trois classes. En effet, nous pouvons observer trois sauts d’inerties, ou trois coudes, indiquant une séparation naturelle en trois groupes.</p>
+<div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(barplot_df, <span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> height)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Index"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Va"</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"royalblue"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>)) <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">color_branches</span>(arbre, <span class="at">k =</span> <span class="dv">3</span>), <span class="at">labels =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="fig-classification" class="cell quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-classification-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-classification-1.png" class="img-fluid figure-img" data-ref-parent="fig-classification" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) Barplot</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-classification-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-classification-2.png" class="img-fluid figure-img" data-ref-parent="fig-classification" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Dendrogramme</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure 3: Barplot et Dendrogramme</figcaption><p></p>
+</figure>
+</div>
+</div>
+<p>A priori, notre échantillon se divise en trois groupes distincts. Par conséquent, nous pouvons effectuer une coupe de l’arbre de classification hiérarchique afin d’obtenir trois clusters. Après le calcul des centres de gravité, nous appliquons la méthode des k-means en utilisant l’algorithme de MacQueen. Ces calculs nous permettent d’identifier trois clusters constitués comme ci-dessous.</p>
+<div id="tbl-clust" class="anchored">
+<table class="table">
+<caption>Table 1: Répartition des phonèmes dans les différents clusters (en %)</caption>
+<thead>
+<tr class="header">
+<th>Phonèmes</th>
+<th>Clust. 1</th>
+<th>Clust. 2</th>
+<th>Clust. 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>aa</td>
+<td>1.0</td>
+<td><strong>24.6</strong></td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td>ao</td>
+<td>0.6</td>
+<td><strong>35.9</strong></td>
+<td>1.9</td>
+</tr>
+<tr class="odd">
+<td>dcl</td>
+<td>0.4</td>
+<td>1.5</td>
+<td><strong>97.6</strong></td>
+</tr>
+<tr class="even">
+<td>iy</td>
+<td>9.5</td>
+<td><strong>37.6</strong></td>
+<td>0.4</td>
+</tr>
+<tr class="odd">
+<td>sh</td>
+<td><strong>88.5</strong></td>
+<td>0.3</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La <a href="#tbl-clust">Table&nbsp;1</a> indique comment chaque phonème est réparti. Nous observons que le premier cluster est majoritairement composé du phonème <em>sh</em> avec 88,5% des observations. Le second, le plus important en termes d’effectif, est principalement constitué des phonèmes <em>aa</em>, <em>ao</em> et <em>iy</em>. Enfin, le troisième cluster se compose presque exclusivement du phonème <em>dcl</em> avec 97,6% des observations. Ainsi, le clustering effectué confirme les premières observations faites dans la partie statistiques descriptives : nous identifions bien trois groupes distincts, dont trois phonèmes partageant des caractéristiques très similaires entre eux et deux autres possédant leurs propres spécificités. Pour vérifier si les associations entre les clusters et les phonèmes sont significatives, nous pouvons utiliser le test du <span class="math inline">\(\chi2\)</span>. En effectuant le test à l’aide de la commande <code>chisq.test</code> sur le logiciel R, nous obtenons une p-value inférieure à 0,05. Par conséquent, nous pouvons conclure qu’il existe une association significative entre les phonèmes et les clusters. En ce qui concerne l’interprétation des clusters, nous pouvons faire certaines hypothèses. Par exemple, le premier cluster pourrait être associé à des phonèmes “chuchotés” ou prononcés avec une certaine réserve. Le deuxième cluster pourrait correspondre à des phonèmes “vibrants” ou “nasalisés”, qui présentent des caractéristiques acoustiques similaires en termes de fréquence. Le troisième cluster pourrait être associé à des phonèmes prononcés avec une certaine emphase ou une accentuation particulière.</p>
+</section>
+<section id="discrimination" class="level1">
+<h1>Discrimination</h1>
+<p>Le but de cette partie va être de mener une analyse discriminante sur nos phonèmes. Très simplement, l’analyse discriminante est une méthode statistique utilisée pour trouver les caractéristiques qui différencient le mieux des groupes d’observations. Ici, notre objectif va donc être de trouver les fréquences acoustiques qui permettent de différencier au mieux les différents phonèmes. Mieux différencier les phonèmes peut nous permettre <em>in fine</em> d’améliorer nos connaissances dans le domaine de la reconnaissance vocale. Pour effectuer cette discrimination, nous utiliserons deux méthodes, l’analyse factorielle discriminante et la PLS DA.</p>
+<section id="analyse-factorielle-discriminante" class="level2">
+<h2 class="anchored" data-anchor-id="analyse-factorielle-discriminante">Analyse Factorielle discriminante</h2>
+<p>L’analyse factorielle discriminante (AFD) est une méthode statistique qui permet d’identifier les fréquences acoustiques discriminantes pour les différents phonèmes. Pour mener à bien cette technique, les données sont divisées en deux échantillons. Ensuite, le modèle est entraîné à l’aide de la fonction <code>lda</code> du package <code>MASS</code>. Afin d’estimer la précision du modèle, il est possible de le tester sur l’échantillon test et d’obtenir une matrice de confusion (<a href="#tbl-AFD">Table&nbsp;2</a> ). Cette matrice permet de visualiser la répartition des phonèmes entre leurs classes initiales et les classes prédites par le modèle. Les résultats montrent que le modèle est assez précis, à l’exception des phonèmes <em>aa</em> et <em>ao</em> qui présentent un taux d’erreur d’environ 20%, tandis que tous les autres phonèmes ont un taux d’erreur proche de 1%. Ces résultats sont confirmés par la précision globale du modèle, qui s’élève à 93%.</p>
+<div id="tbl-AFD" class="anchored">
+<table class="table">
+<caption>Table 2: Matrice de confusion de l’AFD</caption>
+<thead>
+<tr class="header">
+<th>Classe Prédite</th>
+<th>aa</th>
+<th>ao</th>
+<th>dcl</th>
+<th>iy</th>
+<th>sh</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>aa</strong></td>
+<td>106</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><strong>ao</strong></td>
+<td>33</td>
+<td>186</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>dcl</strong></td>
+<td>0</td>
+<td>0</td>
+<td>182</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><strong>iy</strong></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>259</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><strong>sh</strong></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<section id="variables-les-plus-discriminantes" class="level3">
+<h3 class="anchored" data-anchor-id="variables-les-plus-discriminantes">Variables les plus discriminantes</h3>
+<p>A présent, nous procédons à l’identification des phonèmes les plus discriminants. En obtenant les scores d’importance des variables, nous observons que les dix phonèmes les plus discriminants se situent presque tous autour de la fréquence x20 (<a href="#tbl-10">Table&nbsp;3</a>). Nous pouvons ainsi affirmer que les fréquences basses, c’est-à-dire celles du début du spectre, sont les plus importantes pour distinguer les différents groupes de phonèmes dans notre jeu de données. Nous pouvons émettre l’hypothèse que les caractéristiques acoustiques des phonèmes peuvent varier en fonction de l’articulation et de la position dans la parole. Les fréquences basses pourraient ainsi refléter des aspects importants de l’articulation, tels que la manière dont les cordes vocales vibrent ou la manière dont les cavités buccales et nasales modifient les sons produits. Ces fréquences basses pourraient donc fournir des informations cruciales pour différencier les phonèmes.</p>
+<div id="tbl-10" class="anchored">
+<table class="table">
+<caption>Table 3: Les 10 fréquences les plus discriminantes</caption>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th>coef</th>
+<th>importance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>x.17</td>
+<td>-0.1435770</td>
+<td>0.0206144</td>
+</tr>
+<tr class="even">
+<td>x.18</td>
+<td>-0.1326711</td>
+<td>0.0176016</td>
+</tr>
+<tr class="odd">
+<td>x.19</td>
+<td>-0.1185520</td>
+<td>0.0140546</td>
+</tr>
+<tr class="even">
+<td>x.20</td>
+<td>-0.1125399</td>
+<td>0.0126652</td>
+</tr>
+<tr class="odd">
+<td>x.12</td>
+<td>0.1018741</td>
+<td>0.0103783</td>
+</tr>
+<tr class="even">
+<td>x.9</td>
+<td>0.0883249</td>
+<td>0.0078013</td>
+</tr>
+<tr class="odd">
+<td>x.16</td>
+<td>-0.0865254</td>
+<td>0.0074866</td>
+</tr>
+<tr class="even">
+<td>x.35</td>
+<td>-0.0821173</td>
+<td>0.0067433</td>
+</tr>
+<tr class="odd">
+<td>x.10</td>
+<td>0.0802089</td>
+<td>0.0064335</td>
+</tr>
+<tr class="even">
+<td>x.11</td>
+<td>0.0750107</td>
+<td>0.0056266</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Pour conclure avec cette méthode, nous avons tenté d’utiliser la méthode LASSO (Least Absolute Shrinkage and Selection Operator) pour sélectionner les variables les plus pertinentes pour la classification. Malheureusement, nos résultats ont indiqué que le processus de sélection de variables n’avait pas d’impact significatif sur la performance du modèle.</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+</section>
+</section>
+<section id="pls-da" class="level2">
+<h2 class="anchored" data-anchor-id="pls-da">PLS-DA</h2>
+<p>La deuxième méthode d’analyse supervisée que nous avons utilisée pour cette étude est la PLS-DA. Cette analyse est intéressante et vient compléter l’AFD, car elle nous permet de prendre en compte la corrélation qui peut exister entre les différentes caractéristiques acoustiques de nos phonèmes. De plus, la PLS-DA permet de prédire la classe d’un nouvel individu en fonction de ses caractéristiques acoustiques. Dans le cas de l’analyse des phonèmes, cela peut être utile pour identifier la classe d’un phonème inconnu à partir de ses caractéristiques acoustiques. Pour réaliser notre PLS-DA, nous avons utilisé uniquement le package <code>Mix0mics</code> de R. Comme pour l’AFD, nous avons commencé par définir deux échantillons, un d’apprentissage et un d’entraînement. Ensuite, nous avons utilisé la fonction <code>plsda</code> avec l’échantillon d’apprentissage pour estimer un premier modèle. Notons que ce modèle est effectué sur cinq composantes pour les cinq phonèmes. À la suite de ce premier modèle, nous avons obtenu un graphique relativement similaire à ce qui avait pu être fait dans notre partie d’analyse de données. Cependant, en utilisant la validation croisée, nous avons déterminé un nombre optimal de trois composantes. La <a href="#fig-plsda3">Figure&nbsp;4</a> nous donne une représentation graphique de la PLS-DA effectuée. Nous pouvons observer que mise à part les phonèmes <em>aa</em> et <em>ao</em>, les trois autres phonèmes arrivent bien à se détacher et à se regrouper entre eux par rapport à la première PLS-DA effectuée sur cinq composantes.</p>
+<div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res5, <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"PLS-DA sur cinq composantes"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res3, <span class="at">comp =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>), <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span><span class="st">" PLS-DA sur trois composantes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="fig-plsda3" class="cell quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-plsda3-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-plsda3-1.png" class="img-fluid figure-img" data-ref-parent="fig-plsda3" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) 5 composantes</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-plsda3-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-plsda3-2.png" class="img-fluid figure-img" data-ref-parent="fig-plsda3" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) 3 composantes</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure 4: Représentations graphiques des PLS-DA</figcaption><p></p>
+</figure>
+</div>
+</div>
+<section id="mesures-de-performances" class="level3">
+<h3 class="anchored" data-anchor-id="mesures-de-performances">Mesures de performances</h3>
+<p>Afin d’évaluer la performance du modèle, nous avons procédé à une prédiction sur l’échantillon test. La mesure utilisée pour cette prédiction est la distance de Mahalanobis, qui permet d’évaluer la similarité entre deux observations en prenant en compte leur corrélation. Dans le cadre de notre étude, cette distance indique un taux de classification correcte de 0,7197, soit 71,97% d’observations correctement classées en fonction de leur groupe d’appartenance. Comme pour l’analyse factorielle discriminante, une matrice de confusion a été construite à partir de l’échantillon test. Cette matrice révèle un taux d’erreur de 22%, ce qui indique une précision moindre du modèle. Ce taux d’erreur est dû à la difficulté pour le modèle à distinguer les différences entre les deux phonèmes les plus proches, à savoir <em>aa</em> et <em>ao.</em></p>
+</section>
+<section id="contribution-aux-composantes" class="level3">
+<h3 class="anchored" data-anchor-id="contribution-aux-composantes">Contribution aux composantes</h3>
+<p>Enfin, pour compléter l’analyse, nous avons décidé de projeter les fréquences acoustiques ayant le plus d’importances dans la formation de nos trois composantes (<a href="#fig-comp">Figure&nbsp;5</a>). Les fréquences acoustiques les plus discriminantes pour la composante 1 sont celles qui se trouvaient à droite du spectre acoustique et qui correspondaient au phonème <em>sh.</em> Les fréquences les plus discriminantes pour les composantes 2 et 3 sont les fréquences les plus basses, correspondant respectivement aux phonèmes <em>aa</em>, <em>ao</em> et <em>iy.</em> Cependant, aucune des variables correspondantes n’a contribué négativement à la composante 2, alors que le phonème <em>iy</em> a contribué positivement à la composante 3. Ainsi, il semble que les fréquences basses soient importantes pour la discrimination des phonèmes, en particulier pour les phonèmes <em>aa</em>, <em>ao</em> et <em>iy.</em> En revanche, les fréquences les plus élevées du spectre acoustique semblent être importantes pour la discrimination du phonème <em>sh.</em> Ces résultats sont cohérents avec la littérature sur la perception des phonèmes, qui indique que les fréquences basses peuvent être importantes pour la reconnaissance des phonèmes, en particulier pour les voyelles.</p>
+<div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">1</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 1"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">2</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 2"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">3</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="fig-comp" class="cell quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-comp-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-comp-1.png" class="img-fluid figure-img" data-ref-parent="fig-comp" width="672"></p>
+<p></p><figcaption class="figure-caption">(a) Composante 1</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-comp-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-comp-2.png" class="img-fluid figure-img" data-ref-parent="fig-comp" width="672"></p>
+<p></p><figcaption class="figure-caption">(b) Composante 2</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 33.3%;justify-content: center;">
+<div id="fig-comp-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-comp-3.png" class="img-fluid figure-img" data-ref-parent="fig-comp" width="672"></p>
+<p></p><figcaption class="figure-caption">(c) Composante 3</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure 5: Contributions des individus aux trois composantes</figcaption><p></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>En utilisant des méthodes de statistiques et d’analyse de données, l’objectif de cette étude était de mieux comprendre les liens entre les phonèmes et les fréquences sonores. Dans la première partie, une analyse de statistique descriptive a été réalisée pour distinguer trois groupes de phonèmes. À l’aide du graphique des individus et du periodogramme, des similitudes ont été observées entre les phonèmes <em>aa</em>, <em>ao</em> et <em>iy</em>, ainsi qu’une opposition entre les phonèmes <em>dcl</em> et <em>sh</em>. Ces observations ont été confirmées par notre classification qui a permis de dégager trois clusters distincts. En accord avec l’analyse préliminaire, le cluster 1 était majoritairement composé du phonème <em>sh</em>, le cluster 2 était majoritairement composé des phonèmes <em>aa</em>, <em>ao</em> et <em>sh</em>, et enfin, le cluster 3 était composé en grande partie du phonème <em>dcl</em>.</p>
+<p>Ensuite, une analyse discriminante a été réalisée pour identifier les fréquences sonores qui permettaient de discriminer au mieux les différents phonèmes. L’analyse discriminante factorielle a montré que ce sont les fréquences les plus basses qui semblaient discriminer au mieux les différents phonèmes. Cette observation est en accord avec l’analyse du periodogramme qui montrait que le niveau des fréquences était en moyenne plus élevé au début du spectre sonore. Bien que ces observations ne permettent pas de tirer des conclusions certaines, il est possible que ces résultats soient dus au fait que tous les phonèmes étudiés sont des voyelles.</p>
+<p>Enfin, pour compléter notre analyse discriminante, une analyse PLS-DA a été effectuée. Les résultats de cette PLS-DA ont confirmé que les fréquences les plus basses pouvaient être un facteur discriminant pour l’identification des phonèmes, en particulier pour les phonèmes les plus similaires, tels que <em>aa</em>, <em>ao</em> et <em>iy</em>. Cependant, les performances de la PLS-DA se sont avérées moins robustes que celles de l’AFD. Dans le cadre de cet échantillon, il est donc possible que l’AFD soit suffisante pour obtenir une bonne discrimination.</p>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>Si dans cette étude, nous avons identifié les fréquences basses comme étant un élément clé pour discriminer les phonèmes, il est utile de préciser que ces caractéristiques acoustiques ne sont pas les seules à pouvoir les discriminer. D’autres caractéristiques telles que la durée du phonème ou les transitions de fréquences entre les phonèmes peuvent également jouer un rôle important dans la reconnaissance vocale. Dans cette étude, nous avons dû faire avec les données qui nous étaient fournis, ainsi les résultats pourraient s’avérer différents avec un autre échantillon de phonèmes. De plus, il faut tenir compte du fait que ces résultats ne sont pas forcément généralisable à d’autres langues et populations.</p>
+<p><a href="var_latentes.pdf">PDF</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2023, Gabriel Ammour</div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/gabriel-ammour-7263291b8">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
