@@ -5,7 +5,7 @@ project:
 website:
   reader-mode: false
   page-footer:
-    background: "#FFFFF6"
+    background: "#F8F8FF"
     left: "Copyright 2023, Gabriel Ammour"
     center:
       - icon: github
@@ -14,8 +14,8 @@ website:
         href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
   title: "**Gabriel Ammour**"
   navbar:
-    foreground: "#191970"
-    background: "#FEF9E7"
+    foreground: "#663399"
+    background: "#F8F8FF"
     left: 
       - text: "About me"
         file: about.qmd
@@ -32,8 +32,8 @@ website:
         href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
 
   sidebar:
-    foreground: "#191970"
-    background: "#FFFFF6"
+    foreground: "#663399"
+    background: "#F8F8FF"
     style: "floating"
     search: true
     contents:
@@ -51,8 +51,8 @@ format:
     theme: literia
     mainfont: sans-serif
     fontcolor: "#191970"
-    linkcolor: "#663399"
-    backgroundcolor: "#FFFFF6"
+    linkcolor: "#4B0082"
+    backgroundcolor: "#F8F8FF"
     monofont: sans-serif
     css: styles.css
     
