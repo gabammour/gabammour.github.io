@@ -8,7 +8,7 @@
 // Define colors
 
 $white: #FFFFFF !default;
-$blue:  #05134A !default; 
+$blue:  #181736 !default; 
 $orange: #FA7B0B !default;
 $orange-2: #FFEEE6 ;
 
@@ -61,13 +61,13 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 .navbar {
   font-size: $btn-font-size-sm;
   font-family: "Helvetica Neue";
-  border: 5px solid $orange;
+  border: 5px solid $white;
   border-top-width: 0px;
   border-bottom-width: 0.1px;
   border-left-width: .5px;
   border-right-width: .5px;
-  border-left-color: $white;
-  border-right-color: $white;
+  border-left-color: $orange;
+  border-right-color: $orange;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
