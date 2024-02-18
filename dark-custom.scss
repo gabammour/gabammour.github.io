@@ -1,0 +1,91 @@
+/*-- scss:functions --*/
+@function colorToRGB ($color) {
+  @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
+}
+
+/*-- scss:defaults --*/
+
+// Define colors
+
+$white: #FFFFFF !default;
+$blue:  #05134A !default; 
+$orange: #FA7B0B !default;
+$orange-2: #FFEEE6 ;
+
+// Background
+
+$body-color: $white !default;   
+$body-bg: $blue !default;
+$link-color: $orange !default;
+$input-bg: $white !default;
+$popover-bg: $orange !default;
+
+$navbar-bg: $blue ;
+$footer-bg: $blue ;
+
+// Code blocks
+
+$code-block-border-left: $orange !default;
+$code-block-border-left-style: solid;
+$code-block-border-left-size: 5px;
+$code-block-padding-left: 0.1em ; // Gap between border and code block
+$code-block-bg: $orange-2 ; 
+$btn-code-copy-color: $orange ; 
+$btn-code-copy-color-active	: $blue ; 
+$code-bg : $orange-2 !default; 
+$code-color : $blue !default; 
+
+// Table of content
+
+$toc-color : $orange ; 
+
+// Fonts
+
+$font-family-sans-serif: -"Helvetica Neue" !default;
+
+
+$font-size-base: 1.1rem !default; // Police d'écriture texte
+
+$h1-font-size: 3.2rem !default;
+$h2-font-size: 1.6rem !default;
+$h3-font-size: 1.6rem !default;
+$h4-font-size: 1.6rem !default;
+$h5-font-size: 1.6rem !default;
+
+$toc-font-size:  1.1rem !default;
+
+$btn-font-size-sm: 1.2rem !default; // Police navbar
+
+/*-- scss:rules --*/
+
+.navbar {
+  font-size: $btn-font-size-sm;
+  font-family: "Helvetica Neue";
+  border: 5px solid $orange;
+  border-top-width: 0px;
+  border-bottom-width: 0.1px;
+  border-left-width: .5px;
+  border-right-width: .5px;
+  border-left-color: $white;
+  border-right-color: $white;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.title {
+  font-size: 3.2rem;
+  color: $orange;
+}
+
+.main {
+  font-size: 1.6rem;
+  color: $orange;
+}
+
+
+
+
+
+

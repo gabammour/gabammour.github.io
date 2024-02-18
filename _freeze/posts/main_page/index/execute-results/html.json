@@ -1,0 +1,14 @@
+{
+  "hash": "296e543ebafdaa9bfb734687d8d0d9ea",
+  "result": {
+    "markdown": "---\n    title: \" LaTeX\"\n    author: \"Gabriel Ammour\"\n    date: \"2023-02-04\"\n    categories: [Academic writing]\n    description: \"🖋️\"\n    format: \n      html: \n        toc: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n\\documentclass[oneside,12pt, english, french]{book}\n\n\\input{Main/packages}\n\n\n\\begin{document}\n\n\n\\frontmatter\n\\input{Main/title_page} \n\\input{Chapter/abstract}\n\\addcontentsline{toc}{chapter}{Summary}\n\\shorttoc{Summary}{0}\n\n\n\\mainmatter\n\\input{Chapter/introduction}\n\\input{Chapter/nom_du_chapitre}\n\n\n\\printbibliography\n\\addcontentsline{toc}{chapter}{Table of contents}\n\\tableofcontents\n\n\n\\end{document}\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

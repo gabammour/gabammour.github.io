@@ -4,56 +4,51 @@ project:
 
 website:
   reader-mode: false
+  back-to-top-navigation: true
   page-footer:
-    background: "#F8F8FF"
+    background: "#FFFFFF"
+    foreground: "#FA7B0B"
+    border: true
     left: "Copyright 2023, Gabriel Ammour"
-    center:
-      - icon: github
-        href: https://github.com/
-      - icon: linkedin
-        href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
-  title: "**Gabriel Ammour**"
-  navbar:
-    foreground: "#663399"
-    background: "#F8F8FF"
-    left: 
-      - text: "About me"
-        file: about.qmd
-      - text: "Curriculum Vitae"
-        file: cv.qmd
-      - text: "My blog"
-        file: index.qmd 
-      - text: Reach me
-        file: contact.qmd
     right:
       - icon: github
         href: https://github.com/
       - icon: linkedin
         href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
-
+      - icon: strava
+        href: https://www.strava.com/athletes/ammour_gabriel
+  title: "[**Gabriel Ammour**]{.main}"
+  
+  navbar:
+    foreground: "#FA7B0B"
+    background: "#FFFFFF"
+    right:
+    - text: "Blog"
+      file: index.qmd
+    - cv.qmd
+    - contact.qmd
+    - icon: github
+      href: https://github.com/
+    - icon: linkedin
+      href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
+    - icon: strava
+      href: https://www.strava.com/athletes/ammour_gabriel
+  
   sidebar:
-    foreground: "#663399"
-    background: "#F8F8FF"
-    style: "floating"
-    search: true
-    contents:
-      - section: "About me"
-        contents:
-        - about.qmd
-        - cv.qmd
-        - contact.qmd
-      - section: "Blog"
-        contents:
-        - index.qmd
+    style: "docked"
+    border: true 
+    
 format:
   html:
-    smooth-scroll: true
-    theme: literia
     mainfont: sans-serif
-    fontcolor: "#191970"
-    linkcolor: "#4B0082"
-    backgroundcolor: "#F8F8FF"
-    monofont: sans-serif
-    css: styles.css
-    
+    grid: 
+      sidebar-width: 500px
+      body-width: 1500px
+      margin-width: 500px
+      gutter-width: 3rem
+    smooth-scroll: true
+    theme: 
+      light: custom.scss
+      dark: [custom.scss, dark-custom.scss]
+      
 editor: visual

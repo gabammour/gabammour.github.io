@@ -1,5 +1,5 @@
 ---
-title: "🎓"
+title: "Curriculum Vitae"
 about:
   template: solana
 ---
@@ -14,6 +14,7 @@ about:
 
 ## Skills
 
+````         
 ``` {{r}}
 gabriel %>% intermediate user
 # Favorite libraries 
@@ -21,10 +22,13 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 ```
+````
 
+````         
 ``` {{python}}
 import gabriel as beginner
 ```
+````
 
 ## Languages
 

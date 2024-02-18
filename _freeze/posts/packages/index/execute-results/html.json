@@ -1,0 +1,14 @@
+{
+  "hash": "7d65f165b507bfceba4d4d0eab5f9a96",
+  "result": {
+    "markdown": "---\n    title: \"Les packages sur LaTeX\"\n    author: \"Gabriel Ammour\"\n    date: \"2023-02-04\"\n    categories: [Academic writing]\n    description: \"🖋️\"\n    format: \n      html: \n        toc: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n\\pagestyle{plain}\n\\usepackage[utf8]{inputenc}\n\\usepackage{lipsum}\n\\usepackage[hyphens]{url}\n\\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}\n\\usepackage{varioref}\n\\usepackage{babel}\n\\usepackage[T1]{fontenc}\n\\usepackage{mathptmx}\n\\fontfamily{lmss}\\selectfont\n\\usepackage{graphicx}\n\\usepackage{rotating}\n\\usepackage{subcaption}\n\\usepackage{float}\n\\usepackage{setspace}\n\\usepackage{blindtext}\n\\usepackage{titlesec}\n\\usepackage{lipsum}\n\\usepackage{array}\n\\usepackage{multirow}\n\\usepackage{tabularx}\n\\usepackage{ragged2e}\n\\usepackage[dvipsnames]{xcolor}\n\\usepackage{tikz}\n\\usetikzlibrary{mindmap}\n\\usepackage{shorttoc}\n\\usepackage{amsmath,amsfonts,amssymb}\n\\usepackage{eso-pic}\n\\usepackage{fullpage}\n\\usepackage{caption}\n\\usepackage{xcolor, soul}\n\\sethlcolor{yellow}\n\\usepackage{listings}\n\\usepackage{appendix}\n\\usepackage[acronym]{glossaries}\n\\usepackage{pdfpages}\n\\usepackage{longtable}\n\\usepackage{booktabs}\n\\usepackage{fancyvrb}\n\\usepackage{csquotes}\n\\usepackage[hidelinks]{hyperref} \n\\pagecolor{white}\n\\hypersetup{\n    colorlinks=true,\n    linkcolor=blue,\n    filecolor=blue,      \n    urlcolor=blue,\n    citecolor=blue}\n\n\\usepackage[backend=biber, style=apa, sorting = nyt, url=false]{biblatex}\n\\addbibresource{Main/bibmemoire.bib}\n\\onehalfspacing\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

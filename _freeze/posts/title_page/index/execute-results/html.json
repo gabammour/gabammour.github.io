@@ -1,0 +1,14 @@
+{
+  "hash": "619df156a81d0037489044443a92cd1a",
+  "result": {
+    "markdown": "---\n    title: \"Page de titre sur LaTeX\"\n    author: \"Gabriel Ammour\"\n    date: \"2023-02-04\"\n    categories: [Academic writing]\n    description: \"🖋️\"\n    format: \n      html: \n        toc: true\n---\n\n\n### Introduction\n\n### Compréhension\n\nLa fonction `\\vspace` permet de créer un espace verticale entre deux éléments. L'utilisation de `\\Large` ou du `\\Huge` permet de modifier la taille du texte, pour plus d'information concernant la taille de la police, vous pouvez vous diriger par [là](https://www.overleaf.com/learn/latex/Font_sizes%2C_families%2C_and_styles). Pour centrer les éléments sur la page, nous faisons appel à `\\begin{center}` et `\\end{center}`. Chaque mots ou phrases placés entre ces deux commandes seront centrés. Enfin la fonction `\\includegraphics{}` permet d'inclure une image d'un fichier externe. Pour que l'élément apparaisse, il faut s'assurer de bien mettre le chemin de l'image entre les `{}`. Les `[]` présent avant les accolades permettent de rentrer des options. Par exemple, ici nous avons préciser que nous voulions une largeur de 8cm (`[width = 8cm]`). Pour plus d'informations concernant ces paramètres, je vous conseil d'aller voir par [ici](https://www.overleaf.com/learn/latex/Questions/How_do_I_specify_the_size_of_an_image_in_LaTeX%3F).\n\n\n::: {.cell}\n\n```{.r .cell-code}\n\\includegraphics[width = 8cm]{Logo Nantes Université} \n\\vspace*{3.5cm} \n\\begin{center}\n\\large{Insert the name of your formation}\n\\end{center}\n\\begin{center}\n\\large{Insert the name of the course}\n\\end{center}\n\\vspace*{0.5cm}\n\\begin{center}\n\\Huge{\\textbf{Insert a fancy title}}\n\\end{center}\n\\vspace*{0.5cm}\n\\Large\n\\begin{center}\nInsert your name \n\\end{center}\n\\begin{center}\n\\Large\nUnder the supervision of a great teacher \n\\end{center}\n\\begin{center}\n\\Large\nInsert the date \n\\end{center}\n\\vspace*{5cm}\n\\includegraphics[width = 20cm]{Bandeau Nantes Université}\n```\n:::\n\nVous trouverez un aperçu de la page de titre donnée par le code ci-dessous [ici](title_page_blog.pdf). Notez que vous n'aurez pas forcément la même police d'écriture que sur l'aperçu. Pour en savoir plus sur les polices d'écritures, je vous renvoie vers mon article sur le préambule.\n\n### Ressources \nPour télécharger le bandeau de Nantes Université, vous pouvez cliquer [ici](bandeau_NU.png). Pour le logo de Nantes Université, vous pouvez cliquer [ici](logo_NU_black.pdf). Enfin, si vous êtes membre de l'IAE Nantes, cliquez [ici](logo_IAE.png).\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
