@@ -1,7 +1,5 @@
 ---
-title: "📧 Contact"
-about:
-  template: solana
+title: "Contact 📧"
 ---
 
 For any inquiries, collaboration opportunities, or just to say hi, you can reach me at :

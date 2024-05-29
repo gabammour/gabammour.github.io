@@ -3,7 +3,6 @@
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html), [Noa Le Roux](https://noalrx.github.io/portfolio/)"
     date: "2023-02-04"
     categories: [School projects]
-    image: "meat.png"
     description: "🥩"
     format: 
       html: 
@@ -26,5 +25,4 @@ Our findings indicated that the majority of the student population was aware of 
 
 In conclusion, our report highlights the need for public policies to be more specific in addressing the hazards of meat consumption, particularly processed meat, on the health of all citizens. Given that the student population seems to be relatively well-informed about animal and environmental issues, there may be an opportunity to better educate them about the health effects of meat consumption and encourage more sustainable dietary habits. As the world faces the challenges of a rapidly growing population and limited resources, reducing our dependence on meat will likely be necessary for a sustainable and healthy future.
 
-
-Full text pdf [here](Ammour Gabriel, Bouedo Theo, Le roux Noa.pdf)
+Full text pdf [here](Ammour%20Gabriel,%20Bouedo%20Theo,%20Le%20roux%20Noa.pdf)

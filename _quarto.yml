@@ -27,13 +27,10 @@ website:
         file: index.qmd
     
       - text: "Curiculum Vitae"
-        menu: 
-          - text: "CV détaillé"
-            file: cv.qmd
+        file: cv.qmd
     
       - text: "Contact"
-        menu: 
-          - contact.qmd
+        file: contact.qmd
     
       - icon: github
         href: https://github.com/

@@ -3,7 +3,6 @@
     author: "Gabriel Ammour, Noa Le Roux"
     date: "2022-11-01"
     categories: [School projects]
-    image: "happy.png"
     description: "😃"
     format: 
       html: 

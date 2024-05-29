@@ -3,7 +3,6 @@
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html)"
     date: "2023-03-12"
     categories: [School projects]
-    image: "logo_github.png"
     description: "🐙"
     format: 
       html: 
@@ -13,7 +12,6 @@
 # Context
 
 This composition was produced with the intent of fulfilling the requirements of the course *Economie numerique*, which was conducted by [Raphael Suire](https://scholar.google.fr/citations?user=0-VE22wAAAAJ&hl=fr) within the Master ECAP program at IAE Nantes. For ease of access, the PDF version of this composition can be found [here](Platform-essay.pdf).
-
 
 # Introduction
 
@@ -25,10 +23,13 @@ This essay explores the ways in which GitHub has leveraged network effects and n
 
 GitHub is a web-based platform that offers a wide range of tools and services to support and enhance software development. Founded in San Francisco in 2008 by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett, it quickly became a prominent player in the world of software development. Within just three years, the platform had reached the impressive milestone of one million users, and its user base has continued to grow rapidly ever since. In recognition of its immense potential, Microsoft, the software giant, made the strategic decision to acquire the company for a staggering 7.5 billion dollars in 2018. Today, GitHub has more than 100 million users and ranks among the most visited websites globally. According to Brian Doll, the company's former vice-president, its popularity is attributable to the fact that *software is becoming as important as the written word* [^1]. Consequently, GitHub can be viewed as a cornerstone of both Web 2.0 and Web 3.0.
 
-At its core, GitHub is built around the Git version control system, which was created in 2005 by Linus Torvalds. Using a branching model, Git provides a distributed, decentralized approach to version control that enables developers to work on code collaboratively and seamlessly[^2]. By building on top of Git, GitHub has been able to create a powerful platform that enables developers to collaborate on projects at various scale and across a wide range of industries. For instance, GitHub has developped  its popularity among data scientists through the host of widely used libraries like tidy verse which is one of the most popular library for the R programming language. Providing a centralized platform for project management GitHub has also developped a robust social networking component that allows developers to showcase their skills and experience, follow other users, and engage in discussions around various topics related to software development. This has made GitHub an essential platform for professional networking and career advancement in the tech industry.
+[^1]: [Wired, How GitHub Conquered Google, Microsoft, and everyone else, 2015](https://www.wired.com/2015/03/github-conquered-google-microsoft-everyone-else/)
+
+At its core, GitHub is built around the Git version control system, which was created in 2005 by Linus Torvalds. Using a branching model, Git provides a distributed, decentralized approach to version control that enables developers to work on code collaboratively and seamlessly[^2]. By building on top of Git, GitHub has been able to create a powerful platform that enables developers to collaborate on projects at various scale and across a wide range of industries. For instance, GitHub has developped its popularity among data scientists through the host of widely used libraries like tidy verse which is one of the most popular library for the R programming language. Providing a centralized platform for project management GitHub has also developped a robust social networking component that allows developers to showcase their skills and experience, follow other users, and engage in discussions around various topics related to software development. This has made GitHub an essential platform for professional networking and career advancement in the tech industry.
+
+[^2]: [About - Git](https://git-scm.com/about/branching-and-merging)
 
 # Business model
-
 
 Obtaining precise information regarding GitHub's market share among collaborative platforms is a challenging task. Nonetheless, the platform does face competition from several competitors, including GitLab, BitBucket, and SourceForge. In response, GitHub has focused on expanding its feature set beyond its core offerings of code hosting and version control. In the subsequent section, we will explore GitHub's value proposition and the strategies it employs to generate revenue.
 
@@ -42,17 +43,15 @@ The third pillar is the community. GitHub boasts a vast and active community of 
 
 Finally, the fourth pillar of GitHub is integration. The platform can be seamlessly integrated with a broad range of third-party tools and services, creating a central hub for managing the entire software development workflow. This feature streamlines the development process, making it more efficient and effective.
 
+## Revenue model
 
-## Revenue model 
-
-
-As with many pure players, GitHub provides both free and paid services, operating on a freemium model. This approach is a common business strategy employed by software companies and social media platforms, as it enables them to garner a large user base before monetizing their offerings. Specifically, GitHub's platform offers a complimentary version that permits users to create an unlimited number of public repositories and collaborate with other developers on open-source projects. However, this free service is subject to limitations in storage capacity. 
+As with many pure players, GitHub provides both free and paid services, operating on a freemium model. This approach is a common business strategy employed by software companies and social media platforms, as it enables them to garner a large user base before monetizing their offerings. Specifically, GitHub's platform offers a complimentary version that permits users to create an unlimited number of public repositories and collaborate with other developers on open-source projects. However, this free service is subject to limitations in storage capacity.
 
 The second offering, the GitHub Pro version, works as an extension of the free iteration, increasing the user experience by expanding storage capacity and introducing features such as GitHub Support via email, GitHub Pages, and Protected branches. Although the initial two products are oriented towards single users, GitHub also provides the same two versions for teams and organizations. The team version is analogous to the pro version, but it enables teams to access private repositories and expand their membership. Meanwhile, the organization version mirrors the free version but caters to organizations. We may also mention that GitHub offers a student developer pack that provides free access to GitHub Pro for students.
 
 Lastly, GitHub's ultimate offering, GitHub Enterprise, is the most expensive and primarily targets large companies. It comes with a host of features, such as SAML single sign-on, advanced security measures, and GitHub Enterprise Support.
 
-Furthermore, GitHub provides several paid services, including GitHub Actions, GitHub Packages, and GitHub Marketplace. GitHub Actions empowers developers to automate their software development workflows, streamlining the process and saving time. Meanwhile, GitHub Packages is a service that enables developers to store and share code packages with other developers, enhancing collaboration and productivity. Finally, GitHub Marketplace offers a platform that enables developers to explore and install third-party tools and services that integrate with GitHub, broadening the scope and functionality of the platform. The last example of these additional services is GitHub Copilot, an AI pair programmer that helps developers write code faster by providing autocomplete suggestions. 
+Furthermore, GitHub provides several paid services, including GitHub Actions, GitHub Packages, and GitHub Marketplace. GitHub Actions empowers developers to automate their software development workflows, streamlining the process and saving time. Meanwhile, GitHub Packages is a service that enables developers to store and share code packages with other developers, enhancing collaboration and productivity. Finally, GitHub Marketplace offers a platform that enables developers to explore and install third-party tools and services that integrate with GitHub, broadening the scope and functionality of the platform. The last example of these additional services is GitHub Copilot, an AI pair programmer that helps developers write code faster by providing autocomplete suggestions.
 
 # GitHub as a platform
 
@@ -60,13 +59,17 @@ The platform economy refers to the economic and social activities facilitated by
 
 # Network externalities
 
-As for any platform, GitHub can benefit from network externalities. The first externality that we can input to GitHub is the Winner-takes-all effects[^4](WTAE). Indeed, GitHub's dominant position in the code collaboration platform market creates a WTAE in the sense that new comer, here developers, are more likely to join GitHub instead of any other platform due to the large user base and community. This effect creates a virtuous circle as it makes it even more attractive to other developers and organizations. Hence, we say that a new comer will come for the tool but will stay for the network. 
+As for any platform, GitHub can benefit from network externalities. The first externality that we can input to GitHub is the Winner-takes-all effects[^3](WTAE). Indeed, GitHub's dominant position in the code collaboration platform market creates a WTAE in the sense that new comer, here developers, are more likely to join GitHub instead of any other platform due to the large user base and community. This effect creates a virtuous circle as it makes it even more attractive to other developers and organizations. Hence, we say that a new comer will come for the tool but will stay for the network.
 
-Following the WTAE, GitHub, as a platform, benefits from users' switching costs. Switching costs refer to the costs that consumers or users face when they switch from using one product or service to another. In the case of GitHub, switching cost are both monetary and non-monetary. As a matter of fact, once a developer has invested time and effort into building their code on GitHub, they may find it difficult to switch to another platform due to the high switching costs associated with migrating their code, adjusting to a new interface, and learning a new set of tools and features. It is the same for a company that invester a lots of money to benefit from GitHub prenium features, switching to another service might be expansive. Additionnaly, GitHub benefits from switching costs because it already benefits from WTAE. Indeed, it will be expansive for a developper to migrate to another platform as GitHub is the platform the most used. By leaving the platform, the developer takes the risk of missing collaboration and working opportunies. These lock-in effect in which are users and GitHub benefits from can be enhanced by a lots of framworks and externalities. For instance, because GitHub is the biggest collaborative platform, many third-party services and tools like Gitify or DevHub are built to integrate with GitHub, creating a complementary goods network externality. The more integrations and services that are available on GitHub, the more valuable the platform becomes for developers and organizations and the harder it is to leave the platform. 
+[^3]: [The Winner-Take-All Society, Robert H. Frank and Philip J. Cook (New York: The Free Press, 1995](https://hbr.org/1995/11/the-winner-takes-allsometimes)
+
+Following the WTAE, GitHub, as a platform, benefits from users' switching costs. Switching costs refer to the costs that consumers or users face when they switch from using one product or service to another. In the case of GitHub, switching cost are both monetary and non-monetary. As a matter of fact, once a developer has invested time and effort into building their code on GitHub, they may find it difficult to switch to another platform due to the high switching costs associated with migrating their code, adjusting to a new interface, and learning a new set of tools and features. It is the same for a company that invester a lots of money to benefit from GitHub prenium features, switching to another service might be expansive. Additionnaly, GitHub benefits from switching costs because it already benefits from WTAE. Indeed, it will be expansive for a developper to migrate to another platform as GitHub is the platform the most used. By leaving the platform, the developer takes the risk of missing collaboration and working opportunies. These lock-in effect in which are users and GitHub benefits from can be enhanced by a lots of framworks and externalities. For instance, because GitHub is the biggest collaborative platform, many third-party services and tools like Gitify or DevHub are built to integrate with GitHub, creating a complementary goods network externality. The more integrations and services that are available on GitHub, the more valuable the platform becomes for developers and organizations and the harder it is to leave the platform.
 
 By using social networks concepts like followers or like, GitHub also generates a reputation externalities. The more endorsements and followers a developer has, the more valuable their contributions become, and the more likely they are to attract new developers and new businesses to GitHub.
 
- Finally, as many platforms, GitHub comes with strong ecosystem externalities. As more tools and services are built and made available to developers, the more valuable the platform becomes for users who can access all these tools in one place. The last example of it is GitHub Copilot, the AI pair programmer that we mention earlier that helps developers write code faster and with less work[^3].
+Finally, as many platforms, GitHub comes with strong ecosystem externalities. As more tools and services are built and made available to developers, the more valuable the platform becomes for users who can access all these tools in one place. The last example of it is GitHub Copilot, the AI pair programmer that we mention earlier that helps developers write code faster and with less work[^4].
+
+[^4]: [GitHub - GitHub Copilot](https://github.com/features/copilot)
 
 # Business developpment
 
@@ -85,11 +88,3 @@ By implementing these strategies, GitHub could continue to grow and solidify its
 # Conclusion
 
 To conclude, GitHub has become a dominant player in the network economy by leveraging network effects and network externalities. The platform's core value proposition is built around collaboration, version control, community, and integration. GitHub's freemium business model has been successful in attracting a massive user base, and its revenue model is primarily based on paid versions for individual users, teams, and organizations, as well as paid services such as GitHub Actions and Packages. Despite facing competition from several players, GitHub remains the go-to platform for developers to collaborate, share code, and manage projects. Moving forward, GitHub's potential avenues for growth include further expansion into enterprise and the development of new tools and services to enhance the software development workflow.
-
-[^1]: [Wired, How GitHub Conquered Google, Microsoft, and everyone else, 2015](https://www.wired.com/2015/03/github-conquered-google-microsoft-everyone-else/)
-
-[^2]: [About - Git](https://git-scm.com/about/branching-and-merging)
-
-[^3]: [GitHub - GitHub Copilot](https://github.com/features/copilot)
-
-[^4]: [The Winner-Take-All Society, Robert H. Frank and Philip J. Cook (New York: The Free Press, 1995](https://hbr.org/1995/11/the-winner-takes-allsometimes)

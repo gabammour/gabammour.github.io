@@ -2,7 +2,6 @@
     title: "Sierpiński triangle"
     author: "Gabriel Ammour"
     date: "2023-02-21"
-    image: Sierpinski.png
     categories: [School projects]
     description: "📐"
     format: 
@@ -73,4 +72,3 @@ paste("The triangle area is", round(tar_read("Aire_3"),2))
 tar_read("plot_4")
 paste("The triangle area is", round(tar_read("Aire_4"),4))
 ```
-

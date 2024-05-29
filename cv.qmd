@@ -1,7 +1,6 @@
 ---
 title: "Curriculum Vitae 📄"
-about:
-  template: solana
+page-layout: article
 ---
 
 ## Éducation

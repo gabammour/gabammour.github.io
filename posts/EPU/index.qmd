@@ -2,7 +2,6 @@
 title: "Using `annotate` and `geom_segment` to valuate you times series"
 author: "Gabriel Ammour"
 date: "2023-02-04"
-image: finance.png
 categories: [code, analysis]
 description: "📈"
 format: 
