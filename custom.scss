@@ -8,17 +8,25 @@
 // Define colors
 
 $white: #FFFFFF !default;
-$blue: #1A237E !default;
-$orange: #FA7B0B !default;
+$blue-1: #006BB6 !default;
+$blue: #003884 !default;
+$orange-1: #F58426 !default;
 $orange-2: #FFEEE6 ;
+$orange: #FF6900 ;
+$black: #000000 !default;
 
 // Background
 
 $body-color: $blue !default;   
 $body-bg: $white !default;
-$link-color: $blue !default;
+$link-color: $orange !default;
 $input-bg: $white !default;
 $popover-bg: $blue !default;
+
+
+$navbar-bg: $white !default;
+$sidebar-bg: $blue !default;
+$footer-bg: $white !default;
 
 // Code blocks
 
@@ -34,7 +42,7 @@ $code-color : $blue !default;
 
 // Table of content
 
-$toc-color : $orange ; 
+$toc-color : $orange; 
 
 // Fonts
 
@@ -45,9 +53,9 @@ $font-size-base: 1.1rem !default; // Police d'écriture texte
 
 $h1-font-size: 3.2rem !default;
 $h2-font-size: 1.6rem !default;
-$h3-font-size: 1.6rem !default;
-$h4-font-size: 1.6rem !default;
-$h5-font-size: 1.6rem !default;
+$h3-font-size: 1.2rem !default;
+$h4-font-size: 1rem !default;
+$h5-font-size: 0.8rem !default;
 
 $toc-font-size:  1.1rem !default;
 
@@ -58,17 +66,20 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 .navbar {
   font-size: $btn-font-size-sm;
   font-family: "Helvetica Neue";
-  border: 5px solid $orange;
+  color: $orange;
+  border: 0px solid $orange;
   border-top-width: 0px;
-  border-bottom-width: 0.1px;
+  border-bottom-width: 1px;
   border-left-width: .5px;
   border-right-width: .5px;
   border-left-color: $blue;
   border-right-color: $blue;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
+  border-bottom-color: $white;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: $white;
 }
 
 .title {
@@ -77,12 +88,21 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 }
 
 .main {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: $orange;
+  border: 1px solid $white;
+  padding: 10px;
+  background-color: $white;
 }
 
+.left-foot {
+  color: $orange;
+  font-size: 1rem;
+  
+}
 
-
-
-
-
+.footer {
+  color: $orange;
+  border-top: 20px solid $orange;
+  background-color: $white;
+}

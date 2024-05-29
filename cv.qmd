@@ -1,43 +1,53 @@
 ---
-title: "Curriculum Vitae"
+title: "Curriculum Vitae 📄"
 about:
   template: solana
 ---
 
-## Education
+## Éducation
 
-`2022-2024` Master in Applied Econometrics, *Nantes University* 🇲🇫
+`2022-2025` - **Master Économétrie Appliquée**, *Nantes Université* 🇫🇷
 
-`2021-2022` Exchange program, *Sherbrooke University* 🇨🇦
+`2019-2022` - **Licence Économie et Gestion**, *Nantes Université* 🇫🇷
 
-`2019-2022` Bachelor degree in Economics, *Nantes University* 🇲🇫
+-   Licence 3 Parcours Analyse Économique
 
-## Skills
+-   Licence 1 et 2 Parcours Analyse Internationale
 
-````         
-``` {{r}}
-gabriel %>% intermediate user
-# Favorite libraries 
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-```
-````
+## Expériences académiques
 
-````         
-``` {{python}}
-import gabriel as beginner
-```
-````
+`Septembre 2023 - Février 2024` - **DU Design Factory**, *Polytech Nantes* 🇫🇷
 
-## Languages
+`Janvier 2024` - **Europathon - Un marathon créatif sur le changement climatique et la paix civile**, *Centre d'excellence Jean Monnet UniPaix* 🇪🇺
 
-🇲🇫 Bilingual (Native thong)
+`Juin 2023 - Aout 2024` - **Stage sur la Valorisation de l’éolien en mer**, *LEMNA* 🇫🇷
 
-🇺🇲 C1 `TOEIC, 980/990`
+`Septembre 2021 - Mai 2022` - **Échange universitaire au Québec**, *Université de Sherbrooke* 🇨🇦
+
+## Expériences professionnelles
+
+`Septembre 2023 - Avril 2024` - **Service Civique : Éco-Ambassadeur**, *Crous de Nantes*
+
+`Février 2024` - **Tuteur pour la nuit blanche des chercheurs.es**, *Nantes Université*
+
+`Octobre 2023` - **Vente et tractage pour un concert de musique symphonique**, *ONPL*
+
+## Compétences
+
+### Languages informatiques
+
+-   `R` - `Python` - `SQL` - $\LaTeX$ - `Markdown` - `Git`
+
+### Outils
+
+-   `RStudio` - `Jupyter` - `VSCode` - `Excel`
+
+## Langues
+
+🇲🇫 Bilingue (Native thong)
+
+🇺🇲 Compétences professionnelles `TOEIC, 980/990`
 
 🇪🇸 Notion
-
-... Also, fluent in $\LaTeX$
 
 [Full CV](CV.pdf)
