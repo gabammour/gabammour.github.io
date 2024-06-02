@@ -1,7 +1,11 @@
 ---
-title: "Contact 📧"
+title: "Contact"
 ---
 
-For any inquiries, collaboration opportunities, or just to say hi, you can reach me at :
+For professional inquiries, reach me at :
 
 [`gabriel.ammour@gmail.com`](gabriel.ammour@gmail.com)
+
+For educational inquiries, reach me at :
+
+[`gabriel.ammour1@etu.univ-nantes.fr`](gabriel.ammour1@etu.univ-nantes.fr)

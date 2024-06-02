@@ -1,0 +1,13 @@
+---
+    title: "Service civique"
+    author: "Gabriel Ammour" 
+    date: "2024-04-30"
+    categories: [School projects]
+    description: "🔉"
+    format: 
+      html: 
+        toc: true
+        code-fold: true
+---
+
+Description de mon service civique

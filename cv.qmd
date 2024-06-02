@@ -1,47 +1,98 @@
 ---
-title: "Curriculum Vitae 📄"
+title: "Curriculum Vitae"
 page-layout: article
+toc: true
 ---
 
-## Éducation
+## Education
 
-`2022-2025` - **Master Économétrie Appliquée**, *Nantes Université* 🇫🇷
+`2022-2025` - **Master in Applied Econometrics** - *Nantes Université* 
 
-`2019-2022` - **Licence Économie et Gestion**, *Nantes Université* 🇫🇷
+- Master 2
+  - Master's thesis - *To be defined*
+  - Internship - *To be defined*
+  
+- Gap year
+  - DU Design Factory - *Polytech Nantes*
+  - Service Civique - *Crous de Nantes*
 
--   Licence 3 Parcours Analyse Économique
+- Master 1
+  - Master's thesis - *Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes*
+  - Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
 
--   Licence 1 et 2 Parcours Analyse Internationale
+`2019-2022` - **Bachelor of economics and management** - *Nantes Université* 
 
-## Expériences académiques
+- Year 3 : Economic Analysis
+  - Exchange year in *University of Sherbrooke*, Québec
 
-`Septembre 2023 - Février 2024` - **DU Design Factory**, *Polytech Nantes* 🇫🇷
+- Year 1 and 2 : International track
+  - Classes given in English
 
-`Janvier 2024` - **Europathon - Un marathon créatif sur le changement climatique et la paix civile**, *Centre d'excellence Jean Monnet UniPaix* 🇪🇺
+## Experiences
 
-`Juin 2023 - Aout 2024` - **Stage sur la Valorisation de l’éolien en mer**, *LEMNA* 🇫🇷
+### Academic
 
-`Septembre 2021 - Mai 2022` - **Échange universitaire au Québec**, *Université de Sherbrooke* 🇨🇦
+`Septembre 2023 - Février 2024` - **DU Design Factory[^2]** - *Polytech Nantes* 
 
-## Expériences professionnelles
+[^2]: [Design Factory](posts/design_factory/index.qmd)
 
-`Septembre 2023 - Avril 2024` - **Service Civique : Éco-Ambassadeur**, *Crous de Nantes*
+`Janvier 2024` - **Europathon[^1]** - *Centre d'excellence Jean Monnet UniPaix* 
+
+[^1]: [Europathon - Un marathon créatif sur le changement climatique et la paix civile](posts/europathon/index.qmd)
+
+`Juin 2023 - Aout 2024` - **Stage sur la Valorisation de l’éolien en mer[^3]** - *LEMNA* 
+
+
+[^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
+
+
+`Septembre 2021 - Mai 2022` - **Échange universitaire au Québec** -  *Université de Sherbrooke* 
+
+### Professional 
+
+`Septembre 2023 - Avril 2024` - **Service Civique : Éco-Ambassadeur[^4]** - *Crous de Nantes*
+
+[^4]: [Service Civique : Éco-Ambassadeur](posts/service_civique/index.qmd)
 
 `Février 2024` - **Tuteur pour la nuit blanche des chercheurs.es**, *Nantes Université*
 
-`Octobre 2023` - **Vente et tractage pour un concert de musique symphonique**, *ONPL*
+`Octobre 2023` - **Vente et tractage pour un concert de musique symphonique** - *ONPL*
 
-## Compétences
+## Skills
 
-### Languages informatiques
+### Data Science
 
--   `R` - `Python` - `SQL` - $\LaTeX$ - `Markdown` - `Git`
+- `R` 
+  - Intermediate user
+  - Packages : `dplyr`, `ggplot2`, `shiny`, `tidyverse`
 
-### Outils
+- `Python` 
+  - Beginner user
+  - Packages : `pandas`, `numpy`, `matplotlib`, `seaborn`
 
--   `RStudio` - `Jupyter` - `VSCode` - `Excel`
+- `SQL` 
+  - Beginner user
+  
 
-## Langues
+### Academic writing / presentation 
+
+- $\LaTeX$ 
+  - Intermediate user
+  - `Beamer`, `Tikz`, `BibLaTeX`
+
+- `Markdown`
+  - Intermediate user
+  - `Pandoc`
+  
+- `Quarto`
+  - Intermediate user
+  - 
+
+### Softwares
+
+ - `RStudio` - `VSCode` - `Jupyter` - `Excel`- `GitHub` 
+
+## Languages
 
 🇲🇫 Bilingue (Native thong)
 

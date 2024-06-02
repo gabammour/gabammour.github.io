@@ -9,10 +9,10 @@
 
 $white: #FFFFFF !default;
 $blue-1: #006BB6 !default;
-$blue: #1F610A !default;
+$blue: #0B3500 !default;
 $orange-1: #F58426 !default;
 $orange-2: #FFEEE6 ;
-$orange: #FF6900 ;
+$orange: #CB410B ;
 $black: #000000 !default;
 
 // Background
@@ -83,12 +83,12 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 }
 
 .title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: $orange;
 }
 
 .main {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $orange;
   border: 1px solid $white;
   padding: 10px;

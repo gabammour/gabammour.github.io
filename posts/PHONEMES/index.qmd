@@ -3,7 +3,7 @@
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html)"
     date: "2023-04-06"
     categories: [School projects]
-    description: "🔉"
+    description: ""
     format: 
       html: 
         toc: true
@@ -34,7 +34,8 @@
   library(FactoMineR)
   library(mixOmics)
   library(rgeoda)
-  
+  library(rlang)
+  library(vctrs)
 }
 ```
 

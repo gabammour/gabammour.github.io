@@ -1,0 +1,53 @@
+---
+    title: "Europathon - Un marathon créatif sur le changement climatique et la paix civile"
+    author: "Gabriel Ammour" 
+    date: "2024-01-25"
+    categories: [School projects]
+    description: "🔉"
+    format: 
+      html: 
+        toc: true
+        code-fold: true
+---
+
+## Qu'est-ce que l'Europathon ?
+
+L'Europathon s'insipire directement du concept d'hackathon. À l'origine, l'hackathon est un évènement de programmation informatique. S'inspirant de l'épreuve mythique du Marathon, les participants sont invités à travailler en équipe afin de développer un projet en un temps limité, généralement 24h ou 48h. Levier pour booster l'innovation, le concept s'est rapidement popularisé et démocratisé à d'autres domaines que l'informatique. 
+
+L'Europathon est un marathon créatif sur le thème **"Changement climatique et paix civile"** porté par le centre Jean Monnet.
+Il s'est tenu les 24 et 25 janvier 2024 à Nantes et a réuni plusieurs étudiants de différentes formations. L'objectif était d'y réfléchir à des solutions innovantes pour lutter contre le changement climatique et promouvoir la paix civile en Europe. Pour simplifier l'exercice, les étudiants devaient se positionner sur un des quatre sujets proposés.
+
+- Dialogue citoyen et vivre-ensemble : comment concilier l’urgence climatique et état de droit, démocratie et société apaisée ?
+
+- Déplacés climatiques : comment permettre de meilleures représentations et démentir certains préjugés afin d’assurer l’équilibre social ?
+
+- Comment assurer le “bien-être” des populations (notamment les plus à risque) face aux dérégulations climatiques ?
+
+- Comment assurer une juste et bonne répartition des ressources naturelles, des “biens communs” ?
+
+Une fois les groupes constitués, nous devions nous imprégner du sujet afin de dégager une problématique. Une fois la problématique définie, nous devions réfléchir à une solution innovantes pour y répondre.  Pour orienter notre réflexion dans la bonne direction - du moins celle qui semblait la plus pertinente pour l'organisation -, des outils et des méthodes de travail collaboratif nous ont été fournis. 
+Nous avons également eu la chance de bénéficier de l'expertise de plusieurs intervenants de qualité sur les sujets abordés.
+
+Au terme de ces deux jours, chaque groupe doit présenter sa solution devant un jury. Les critères de jugement sont la pertinence de la solution, l'originalité, la faisabilité et la qualité de la présentation
+
+## Mon experience de l'Europathon
+
+J'ai choisi de travailler sur le sujet **Comment assurer le “bien-être” des populations (notamment les plus à risque) face aux dérégulations climatiques ?**. Un sujet qui fait echo au thème de mon mémoire de Master 1.
+
+Pour commencer, nous devions définir le problème et les enjeux. En ce qui concerne les populations les plus à risque, nous avons identifié les personnes en grande précarité économique, les sans-abris. Cette partie de la population, souvent méconnue, échappant parfois aux statistiques, est l'une des plus vulnérables face aux dérégulations climatiques. Une fois que nous avions identifié notre population cible, nous nous sommes concertés pour identifier les problèmes climatiques auxquels ils sont confrontés. Le problème qui revenait le plus souvent était la canicule.
+
+![](photos/brainstorm.jpg "Brainstorming")
+
+## Mon rôle
+
+
+## Conclusion
+
+
+
+
+
+
+
+
+

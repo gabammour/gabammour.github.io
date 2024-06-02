@@ -2,11 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/service_civique/index.html",
       "/posts/design_factory/index.html",
+      "/posts/europathon/index.html",
+      "/posts/memoire_m1/index.html",
       "/posts/PHONEMES/index.html",
       "/posts/GitHub-Essay/Index.html",
       "/posts/post-with-code/index.html",
-      "/posts/packages/index.html",
       "/posts/EPU/index.html",
       "/posts/meat_consumption/index.html",
       "/posts/ACP/index.html"

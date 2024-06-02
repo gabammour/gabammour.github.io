@@ -1,5 +1,5 @@
 ---
-title: "Welcome ! 📝"
+title: "Welcome to my blog !"
 listing:
   contents: posts
   sort: "date desc"
@@ -7,7 +7,7 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [date, title, author, description, image, categories, reading-time]
+  fields: [date, author, title, reading-time]
 page-layout: article 
 title-block-banner: true
 ---
