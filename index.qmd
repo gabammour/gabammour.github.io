@@ -9,5 +9,5 @@ listing:
   filter-ui: true
   fields: [date, author, title, reading-time]
 page-layout: article 
-title-block-banner: true
+title-block-banner: "#CB410B"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+title-block-banner: "#CB410B"
 ---
 
 For professional inquiries, reach me at :

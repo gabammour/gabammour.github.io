@@ -2,6 +2,7 @@
 title: "Curriculum Vitae"
 page-layout: article
 toc: true
+title-block-banner: "#CB410B"
 ---
 
 ## Education
