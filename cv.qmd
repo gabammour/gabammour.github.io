@@ -81,13 +81,8 @@ title-block-banner: "#CB410B"
   - Intermediate user
   - `Beamer`, `Tikz`, `BibLaTeX`
 
-- `Markdown`
-  - Intermediate user
-  - `Pandoc`
-  
 - `Quarto`
   - Intermediate user
-  - 
 
 ### Softwares
 

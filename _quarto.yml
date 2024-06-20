@@ -54,6 +54,5 @@ format:
     smooth-scroll: true
     theme: 
       light: custom.scss
-      dark: [custom.scss, dark-custom.scss]
       
 editor: visual
