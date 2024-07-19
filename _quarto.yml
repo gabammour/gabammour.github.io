@@ -45,14 +45,13 @@ website:
     
 format:
   html:
-    mainfont: sans-serif
+    theme: custom.scss
+    mainfont: Carlito
     grid: 
       sidebar-width: 500px
       body-width: 1500px
       margin-width: 500px
       gutter-width: 3rem
     smooth-scroll: true
-    theme: 
-      light: custom.scss
-      
+    
 editor: visual

@@ -17,19 +17,19 @@ title-block-banner: "#CB410B"
   - DU Design Factory - *Polytech Nantes*
   - Service Civique - *Crous de Nantes*
 
-- Master 1
+- Master [1](documents/Relevé de notes 2022-2023.pdf)
   - Master's thesis - *Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes*
   - Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
 
-`2019-2022` - **Bachelor of economics and management** - *Nantes Université* 
+`2019-2022` - **Bachelor in economics and management** - *Nantes Université* 
 
-- Year 3 : Economic Analysis
+- Year [3](documents/Document officiel 2022-06-07.pdf) : Economic Analysis
   - Exchange year in *University of Sherbrooke*, Québec
 
-- Year 1 and 2 : International track
+- Year [1](documents/Relevé de notes 2019-2020.pdf) - [2](documents/Relevé de notes 2020-2021.pdf) : International track
   - Classes given in English
 
-## Experiences
+## Experience
 
 ### Academic
 
@@ -39,25 +39,29 @@ title-block-banner: "#CB410B"
 
 `Janvier 2024` - **Europathon[^1]** - *Centre d'excellence Jean Monnet UniPaix* 
 
-[^1]: [Europathon - Un marathon créatif sur le changement climatique et la paix civile](posts/europathon/index.qmd)
+[^1]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
 
-`Juin 2023 - Aout 2024` - **Stage sur la Valorisation de l’éolien en mer[^3]** - *LEMNA* 
+`Juin 2023 - Aout 2024` - **Research internship on hydrogene production through electrolysis[^3]** - *LEMNA* 
 
 
 [^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
 
 
-`Septembre 2021 - Mai 2022` - **Échange universitaire au Québec** -  *Université de Sherbrooke* 
+`Septembre 2021 - Mai 2022` - **Student exchange in Québec** -  *Université de Sherbrooke* 
 
 ### Professional 
 
-`Septembre 2023 - Avril 2024` - **Service Civique : Éco-Ambassadeur[^4]** - *Crous de Nantes*
+`July 2024 - August 2024` - **Runner - Room clerk** - *Plage Goéland*
+
+`Septembre 2023 - Avril 2024` - **Civic service : *Éco-Ambassadeur*[^4]** - *Crous de Nantes*
 
 [^4]: [Service Civique : Éco-Ambassadeur](posts/service_civique/index.qmd)
 
-`Février 2024` - **Tuteur pour la nuit blanche des chercheurs.es**, *Nantes Université*
+`Février 2024` - **Tutor for *la nuit blanche des chercheurs.es* **, *Nantes Université*
 
-`Octobre 2023` - **Vente et tractage pour un concert de musique symphonique** - *ONPL*
+`Octobre 2023` - **Sales and leafleting for a symphonic music concert** - *Orchestre National des Pays de la Loire (ONPL)*
+
+`June 2022 - August 2022` - **Warehouse worker** - *Hydrokit*
 
 ## Skills
 
@@ -65,11 +69,11 @@ title-block-banner: "#CB410B"
 
 - `R` 
   - Intermediate user
-  - Packages : `dplyr`, `ggplot2`, `shiny`, `tidyverse`
+  - Packages : `dplyr`, `tidyverse`, `ggplot2`, `shiny`, `FactoMineR`
 
 - `Python` 
   - Beginner user
-  - Packages : `pandas`, `numpy`, `matplotlib`, `seaborn`
+  - Packages : `pandas`, `numpy`, `matplotlib`
 
 - `SQL` 
   - Beginner user
@@ -79,7 +83,6 @@ title-block-banner: "#CB410B"
 
 - $\LaTeX$ 
   - Intermediate user
-  - `Beamer`, `Tikz`, `BibLaTeX`
 
 - `Quarto`
   - Intermediate user
@@ -90,10 +93,11 @@ title-block-banner: "#CB410B"
 
 ## Languages
 
-🇲🇫 Bilingue (Native thong)
+🇲🇫 Native thong
 
-🇺🇲 Compétences professionnelles `TOEIC, 980/990`
+🇺🇲 [TOEIC®](documents/TOEIC Digital Score Report.pdf) Listening and Reading test - A 980/990 score proof
+of C1 level according to CEFR
 
-🇪🇸 Notion
-
-[Full CV](CV.pdf)
+🇪🇸 Notions
+---
+[1 page CV (Last update - 19/07/2024)](documents/CV_1_page.pdf)

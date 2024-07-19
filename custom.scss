@@ -5,6 +5,14 @@
 
 /*-- scss:defaults --*/
 
+// Import font 
+
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Raleway+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 // Define colors
 
 $white: #FFFFFF !default;
@@ -44,8 +52,6 @@ $toc-color : $orange;
 
 // Fonts
 
-$font-family-sans-serif: -"Helvetica Neue" !default;
-
 
 $font-size-base: 1.1rem !default; // Police d'écriture texte
 
@@ -62,8 +68,8 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 /*-- scss:rules --*/
 
 .navbar {
-  font-size: $btn-font-size-sm;
-  font-family: "Helvetica Neue";
+  font-size: 1.2rem;
+  font-family: "Carlito";
   color: $orange;
   border: 0px solid $orange;
   border-top-width: 0px;
@@ -81,12 +87,13 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3rem ;
   color: $white;
 }
 
 .main {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-family: 'Carlito';
   color: $orange;
   border: 1px solid $white;
   padding: 10px;
@@ -104,3 +111,9 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
   border-top: 20px solid $orange;
   background-color: $white;
 }
+
+
+
+
+
+
