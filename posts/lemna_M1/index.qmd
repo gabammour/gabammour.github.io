@@ -20,10 +20,9 @@ title-block-banner: "#CB410B"
 
 ## Contexte
 
-L'objet de cet article de blog est de présenter rapidement le stage de recherche que j'ai fais à l'issue de ma première année de master. Ce stage a duré 3 mois et a été réalisé au sein du LEMNA, le laboratoire de recherche en économie et management de l'Université de Nantes. Le stage a été rendu possible grâce au financement du cluster ORACLE.
+L'objet de cet article de blog est de présenter rapidement le stage de recherche que j'ai fait à l'issue de ma première année de master. Ce stage a duré 3 mois et a été réalisé au sein du LEMNA, le laboratoire de recherche en économie et management de l'Université de Nantes. Le stage a été rendu possible grâce au financement du cluster ORACLE.
 
-Pour ce stage, j'ai été amené à travailler sur un projet de recherche portant sur l'optimisation des performances technico-économiques d'une ferme éolienne offshore produisant de l'hydrogène à l'aide d'électrolyse. Pour donner un peu de context, je vous propose de vous pencher sur les slides ci-dessous que j'ai réalisé dans le cadre d'une journée scientifique à St Nazaire. Journée durant laquelle nous avons eu la chance de visiter le site d'assemblage des pales éoliennes de GE Renewable Energy.
-
+Pour ce stage, j'ai été amené à travailler sur un projet de recherche portant sur l'optimisation des performances technico-économiques d'une ferme éolienne offshore produisant de l'hydrogène à l'aide d'électrolyse. Pour donner un peu de contexte, je vous propose de vous pencher sur les slides ci-dessous que j'ai réalisés dans le cadre d'une journée scientifique à St Nazaire. Journée durant laquelle nous avons eu la chance de visiter le site d'assemblage des pales éoliennes de GE Renewable Energy.
 
 ```{css, echo=FALSE}
 #title-block-header .description {
@@ -56,10 +55,9 @@ Pour ce stage, j'ai été amené à travailler sur un projet de recherche portan
   <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
 </div>
 ```
-
 ## Résultats
 
-Pour en savoir plus sur les résultats de ce stage, je vous invite à consulter le rapport de stage que j'ai rédigé à l'issue de ce stage. Vous y trouverez une présentation détaillée du sujet de recherche, des méthodes utilisées, des résultats obtenus et des perspectives de recherche. Pour télécharger le rapport, vous pouvez cliquer [ici](Stage from Gabriel.pdf).
+Pour en savoir plus sur les résultats de ce stage, je vous invite à consulter le rapport de stage que j'ai rédigé à l'issue de ce stage. Vous y trouverez une présentation détaillée du sujet de recherche, des méthodes utilisées, des résultats obtenus et des perspectives de recherche. Pour télécharger le rapport, vous pouvez cliquer [ici](Stage%20from%20Gabriel.pdf).
 
 ## Conclusion
 
@@ -67,7 +65,4 @@ Si ce stage n'était pas obligatoire dans le cadre de ma formation, j'ai tout de
 
 Si *a priori* le sujet de recherche m'attirait, j'ai rapidement compris que ce n'était pas un sujet qui me passionnait et pour lequel je souhaitais m'investir. Néanmoins, j'ai appris beaucoup de choses sur le sujet de l'énergie, du monde de la recherche, et j'ai pu développer mes compétences en programmation sur le logiciel Python.
 
-Je tiens à remercier mes deux encadrants, Lionel Lemiale et Anthony Roy, qui ont été très compréhensifs et qui m'ont accompagner tout le long de ce stage.
-
-
-
+Je tiens à remercier mes deux encadrants, Lionel Lemiale et Anthony Roy, qui ont été très compréhensifs et qui m'ont accompagné tout le long de ce stage.

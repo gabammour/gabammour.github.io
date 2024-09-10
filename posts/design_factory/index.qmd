@@ -8,20 +8,57 @@
       html: 
         toc: true
         code-fold: true
+    engine: knitr
+    freeze: false    
+    slides:
+       pdf: "APL_slides.pdf" 
 ---
 
 # Design Factory
 
-## Introduction
+## Contexte 
 
-La Design Factory (DF) est un Diplôme Universtaire (DU) porté par Polytech Nantes en collaboration avec Nantes Université et l'école de design Nantes Atlantique. Ce DU se définit comme un programme d'innovation interedisciplinaire centré sur les usages. En collaboration avec des partenaires exterieurs, des étudiants de différentes formations travaillent ensemble sur une problématique permettant de résulter à un prototype fonctionnel.
+La Design Factory (DF) est un Diplôme Universitaire (DU) porté par Polytech Nantes en collaboration avec Nantes Université et l'école de design Nantes Atlantique. Ce DU se définit comme un programme d'innovation interdisciplinaire centré sur les usages. En collaboration avec des partenaires extérieurs, des étudiants de différentes formations travaillent ensemble sur une problématique permettant de résulter à un prototype fonctionnel.
 
-C'est à la fin de mon Master 1 que j'ai eu l'opportunité de candidater pour intégrer ce DU. Souhaitant faire une année de césure, j'ai profité du fait de ne pas avoir la contrainte de suivre les cours de mon Master 2 pour me consacrer à ce projet. La DF se déroule sur 6 mois, de Septembre à Février. Le programme est organisé de manière à ce que les étudiants puissent suivre les cours de leur formation initiale tout en participant à la DF. C'est pourquoi, le volume hebdomadaire est relativement faible, à savoir 6h par semaine concentrées sur une journée (le Mardi).
+Ce DU s'est déroulé lors de mon année de césure, entre le M1 et le M2.
+La DF se déroule sur 6 mois, de Septembre à Février. Le programme est organisé de manière à ce que les étudiants puissent suivre les cours de leur formation initiale tout en participant à la DF. C'est pourquoi, le volume hebdomadaire est relativement faible, à savoir 6h par semaine concentrées sur une journée (le mardi).
 
-## Le sujet
+Pour cette édition, nous avons eu l'opportunité de travailler en collaboration avec Air Pays de la Loire, l'organisme en charge de la surveillance de la qualité de l'air en région Loire Atlantique.
 
-L'édition 2023-2024 de la DF était en collaboration avec trois acteurs différents. Si tous les sujets étaient intéressants, j'ai choisi de me positionner sur le sujet proposé par **Air Pays de la Loire**. Il n'y avait pas vraiment de problématique précise, mais plutôt une volonté de travailler sur la sensibilisation Nantais aux enjeux de la qualité de l'air.
+## Le projet
 
-### 
+Afin de vous donner une idée de notre projet, je vous propose de jeter un œil au support de notre soutenance finale.
 
-WORK IN PROGRESS
+
+
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
+
+```{=html}
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
+</div>
+```
