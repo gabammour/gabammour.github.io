@@ -46,7 +46,7 @@ title-block-banner: "#CB410B"
 
 ### Professional
 
-`July 2024 - August 2024` - **Waiter** - *[Plage Goéland](https://www.plagegoeland.com/)*
+`July 2024 - August 2024` - **Waiter** - [*Plage Goéland*](https://www.plagegoeland.com/)
 
 `Septembre 2023 - Avril 2024` - **Civic service : *Éco-Ambassadeur***[^4] - *Crous de Nantes*
 
@@ -56,26 +56,26 @@ title-block-banner: "#CB410B"
 
 `Octobre 2023` - **Sales and leafleting for a symphonic music concert** - *Orchestre National des Pays de la Loire (ONPL)*
 
-`June 2022 - August 2022` - **Warehouse worker** - *[Hydrokit](https://www.hydrokit.com/)*
+`June 2022 - August 2022` - **Warehouse worker** - [*Hydrokit*](https://www.hydrokit.com/)
 
 ## Skills
 
 ### Data Science
 
-- `R`
-- `Python`
-- `Stata`
-- `SQL`
-- `SAS`
-- `VBA`
+-   `R`
+-   `Python`
+-   `Stata`
+-   `SQL`
+-   `SAS`
+-   `VBA`
 
 ### Academic writing / presentation
 
-- $\LaTeX$
-- `Quarto`
-- `Zotero`
-- `LimeSurvey`
-- `R Shiny`
+-   $\LaTeX$
+-   `Quarto`
+-   `Zotero`
+-   `LimeSurvey`
+-   `R Shiny`
 
 ### Softwares
 
@@ -89,5 +89,6 @@ title-block-banner: "#CB410B"
 
 🇪🇸 Notions
 
---- 
-[1 page CV (Last update - 09/2024)](documents/CV-09:24.pdf)
+------------------------------------------------------------------------
+
+[1 page CV (Last update - 09/2024)](documents/academic_cv.pdf)
