@@ -9,29 +9,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Raleway+Dots&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Rubik+Glitch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Qahiri&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
 // Define colors
 
 $white: #FFFFFF !default;
 $black: #000000 !default;
+$red: #b51818 !default;
 $blue: #000335 !default;
 $blue-1: #003884 !default;
 $orange: #CB410B !default;
 $orange-1: #F58426 !default;
 $orange-2: #FFEEE6 !default;
 
+
 // Background
 
 $body-color: $blue !default;   
 $body-bg: $white !default;
-$link-color: $blue !default;
+$link-color: $orange !default;
 $input-bg: $white !default;
 $popover-bg: $blue !default;
 $navbar-bg: $white !default;
-$sidebar-bg: $blue !default;
+$sidebar-bg: $white !default;
 $footer-bg: $white !default;
 
 // Code blocks
@@ -52,8 +64,48 @@ $toc-color : $orange;
 
 // Fonts
 
+h1 {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
 
-$font-size-base: 1.1rem !default; // Police d'écriture texte
+h2 {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+h3 {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+h4 {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+.quarto-title-meta .date {
+  font-family: 'Mountains of Christmas', sans-serif;  /* Date dans l'article */
+}
+
+.listing-date{
+  font-family: 'Mountains of Christmas', sans-serif; /* Date sur la page d'acceuil */
+}
+
+.quarto-title-meta-heading {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+.quarto-title-meta-contents { 
+  font-family: 'Mountains of Christmas', sans-serif;  /* Commentaire */
+}
+
+.nav-footer-left {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+.nav-footer-center {
+  font-family: 'Mountains of Christmas', sans-serif;
+}
+
+
+$font-size-base: 1.1rem !default; 
 
 $h1-font-size: 3.2rem !default;
 $h2-font-size: 1.6rem !default;
@@ -68,8 +120,8 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 /*-- scss:rules --*/
 
 .navbar {
-  font-size: 1.2rem;
-  font-family: "Carlito";
+  font-size: 2rem;
+  font-family: "Mountains of Christmas";
   color: $orange;
   border: 0px solid $orange;
   border-top-width: 0px;
@@ -88,12 +140,14 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 
 .title {
   font-size: 3rem ;
-  color: $white;
+  font-family: 'Mountains of Christmas';
+  color: $orange;
+  background-color: $white;
 }
 
 .main {
-  font-size: 2rem;
-  font-family: 'Carlito';
+  font-size: 3rem;
+  font-family: 'Mountains of Christmas';
   color: $orange;
   border: 1px solid $white;
   padding: 10px;
@@ -108,12 +162,44 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 
 .footer {
   color: $orange;
-  border-top: 20px solid $orange;
+  border-top: none;
   background-color: $white;
 }
 
+body .nav-footer {
+    border-top: none;
+}
+
+h2, .h2 {
+    border-bottom: none ;
+    padding-bottom: none ;
+}
 
 
+#quarto-appendix.default {
+    border-top: 1px solid $blue;
+}
+
+div.quarto-post {
+    display: flex;
+    gap: none;
+    margin-bottom: none;
+    border-bottom: none;
+}
 
 
-
+#quarto-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    border-radius: .25rem;
+    box-shadow: 0 .2rem .5rem #6c757d,0 0 .05rem #6c757d;
+    color: $blue;
+    text-decoration: none;
+    font-size: .9em;
+  
+    text-align: center;
+    left: 50%;
+    padding: .4rem .8rem;
+    transform: translate(-50%, 0);
+}

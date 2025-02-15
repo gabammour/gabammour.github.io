@@ -10,12 +10,11 @@ categories: [School projects]
 description: "🐙"
 format: 
   html: 
-    toc: true
+    toc: false
 engine: knitr
 freeze: false    
 slides:
   pdf: "slides.pdf" 
-title-block-banner: "#CB410B"
 ---
 
 ## Contexte

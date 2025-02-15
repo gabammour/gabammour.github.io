@@ -1,12 +1,5 @@
 ---
 title: "Contact"
-title-block-banner: "#CB410B"
 ---
-
-For professional inquiries, reach me at :
-
-[`gabriel.ammour@gmail.com`](gabriel.ammour@gmail.com)
-
-For educational inquiries, reach me at :
-
-[`gabriel.ammour1@etu.univ-nantes.fr`](gabriel.ammour1@etu.univ-nantes.fr)
+ 
+We can connect at *gabriel.ammour@gmail.com*

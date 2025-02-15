@@ -6,13 +6,12 @@
     description: "Master's thesis"
     format: 
       html: 
-        toc: true
+        toc: false
         code-fold: true
     engine: knitr
     freeze: false    
     slides:
        pdf: "AMMOUR_Gabriel_Mémoire_M1ECAP.pdf"
-    title-block-banner: "#CB410B"
 ---
 
 ```{css, echo=FALSE}

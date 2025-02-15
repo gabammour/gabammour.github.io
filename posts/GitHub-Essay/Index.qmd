@@ -2,12 +2,9 @@
     title: "Platform Essay : GitHub"
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html)"
     date: "2023-03-12"
-    categories: [School projects]
-    description: "🐙"
     format: 
       html: 
-        toc: true
-    title-block-banner: "#CB410B"
+        toc: false
 ---
 
 # Context

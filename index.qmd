@@ -4,10 +4,10 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
-  fields: [date, author, title, reading-time]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title]
 page-layout: article 
-title-block-banner: "#CB410B"
+title-block-banner: "#FFFFFF"
 ---

@@ -5,9 +5,8 @@
     categories: [School projects]
     format: 
       html: 
-        toc: true
+        toc: false
         code-fold: true
-    title-block-banner: "#CB410B"
 ---
 
 ## Qu'est-ce que l'Europathon ?
@@ -67,5 +66,3 @@ En tant que chef de projet, j'ai dû soutenir notre projet selon la méthode du 
 ### Remerciements
 
 Je tiens à remercier l'ensemble de l'organisation de cette Europathon et en particulier Clara et Léa de la Sampa pour leur soutien et leur aide. Je remercie également les intervenants de Nantes Métropole pour leur expertise et leur disponibilité. Enfin, je remercie mes coéquipiers pour leur implication et leur travail.
-
-
