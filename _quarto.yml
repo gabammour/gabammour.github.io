@@ -9,8 +9,8 @@ website:
     foreground: "#CB410B"
     border: true
     left: "[**© 2025 Gabriel AMMOUR**]{.left-foot}"
-    center: "[**Made with <3 and Quarto**]{.left-foot}"
-    right: "[*Linkedin*](https://www.linkedin.com/in/gabriel-ammour-7263291b8) & [*Github*](https://github.com/gabammour)"
+    center: "[*Linkedin*](https://www.linkedin.com/in/gabriel-ammour-7263291b8) - [*Github*](https://github.com/gabammour) - [Strava](https://www.strava.com/athletes/115618824){.left-foot}"
+    right: "[**Made with <3 and Quarto**]{.left-foot}"
   title: "[**Gabriel AMMOUR**]{.main}"
   
   search: false 
