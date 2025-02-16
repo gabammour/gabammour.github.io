@@ -1,0 +1,48 @@
+---
+    title: "Heterogeneous preferences for shale water management: Evidence from a choice experiment in Fuling shale gas field, southwest China, Liuyang Yao, Bo Sui, 2020"
+    author: "Gabriel Ammour & Noa Le Roux" 
+    date: "2025-02-07"
+    format: 
+      html: 
+        toc: false
+        code-fold: true
+    engine: knitr
+    freeze: false    
+    slides:
+       pdf: "analyse_ressources_naturelles.pdf"  
+---
+
+Cette présentation orale s'est déroulé dans le cadre du cours *Analyse des marchés des ressources naturelles* présenté par [Camille AIT-YOUCEF](https://sites.google.com/view/camille-ait-youcef/home/research). L'objectif était de présenter un article universitaire tout en le mettant en relation avec les thèmes abordés lors du cours. Vous pouvez retrouver l'article en question [ici](https://www.sciencedirect.com/science/article/pii/S0301421520305486?casa_token=dOEH3zt-rgAAAAAA:5cjc8NuUvnIAmZ0LRAp3fNhao2Ys1uDJ3aLFu1TR6I0uLxvX0q_PCnj2lrboEtGIj5qRYYi1WQ). 
+
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+```
+
+```{=html}
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
+</div>
+```

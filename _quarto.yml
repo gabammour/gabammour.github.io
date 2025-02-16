@@ -10,7 +10,7 @@ website:
     border: true
     left: "[**© 2025 Gabriel AMMOUR**]{.left-foot}"
     center: "[**Made with <3 and Quarto**]{.left-foot}"
-    right: "[*Linkedin*](www.linkedin.com/in/gammour) & [*Github*](https://github.com/gabammour)"
+    right: "[*Linkedin*](https://www.linkedin.com/in/gabriel-ammour-7263291b8) & [*Github*](https://github.com/gabammour)"
   title: "[**Gabriel AMMOUR**]{.main}"
   
   search: false 
@@ -34,9 +34,9 @@ format:
     theme: custom.scss
     mainfont: Newsreader 
     grid: 
-      sidebar-width: 500px # Gauche
-      body-width: 850px # Centre
-      margin-width: 500px # Droite
+      sidebar-width: 0px # Gauche
+      body-width: 500px # Centre
+      margin-width: 0px # Droite
       gutter-width: 2rem
     smooth-scroll: true
     

@@ -6,7 +6,7 @@ toc: false
 
 ## Education
 
-2022-2025 - **Master in Applied Econometrics** - *Nantes Université*
+2022 / 2025 - Master in Applied Econometrics - *Nantes Université*
 
 - Master 2 
 
@@ -14,9 +14,9 @@ toc: false
     
 - Gap year
   
-  -   DU Design Factory - *Polytech Nantes*
+  -   DU Design Factory - *Polytech Nantes*, *Nantes Université*, *L'École de Design Nantes Atlantique*
   
-  -   Service Civique - *Crous de Nantes*
+  -   Civic Service Engagement - *Crous de Nantes*
 
 - Master 1
   
@@ -24,11 +24,11 @@ toc: false
   
   -   Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
 
-2019-2022 - **Bachelor in economics and management** - *Nantes Université*
+2019 / 2022 - Bachelor in economics and management - *Nantes Université*
 
 - Year 3 : Economic Analysis
 
-  -   Exchange year in *University of Sherbrooke*, Québec
+  -   Exchange year in *University of Sherbrooke* - Québec
 
 - Year 1 - 2 : International track
 
@@ -36,31 +36,29 @@ toc: false
 
 ## Experience
 
-July, 2024 - August, 2024 - **Waiter** - [*Plage Goéland*](https://www.plagegoeland.com/)
+07, 2024 / 08, 2024 - Waiter - [*Plage Goéland*](https://www.plagegoeland.com/)
 
-September, 2023 - April, 2024 - **Civic service : *Éco-Ambassadeur***[^4] - *Crous de Nantes*
+09, 2023 / 04, 2024 - Civic Service Engagement - *Crous de Nantes*
 
-[^4]: [**Service Civique : Éco-Ambassadeur**](posts/service_civique/index.qmd)
+09, 2023 / 02, 2024 - DU Design Factory[^1] - *Polytech Nantes*
 
-September, 2023 - February, 2024 - **DU Design Factory**[^1] - *Polytech Nantes*
+[^1]: [Design Factory](posts/design_factory/index.qmd)
 
-[^1]: [**Design Factory**](posts/design_factory/index.qmd)
+02, 2024 - Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/) - *Nantes Université*
 
-February, 2024 - **Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/)** - *Nantes Université*
+01, 2024 - Europathon[^2] - *Centre d'excellence Jean Monnet UniPaix*
 
-January, 2024 - **Europathon**[^2] - *Centre d'excellence Jean Monnet UniPaix*
+[^2]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
 
-[^2]: [**Europathon - A creative marathon on climate change and civil peace**](posts/europathon/index.qmd)
+10, 2023 - Sales and leafleting for a symphonic music concert - *Orchestre National des Pays de la Loire (ONPL)*
 
-October, 2023 - **Sales and leafleting for a symphonic music concert** - *Orchestre National des Pays de la Loire (ONPL)*
+06, 2023 / 08, 2023 - Research internship on hydrogene production through electrolysis[^3] - *LEMNA*
 
-June, 2023 - August, 2023 - **Research internship on hydrogene production through electrolysis**[^3] - *LEMNA*
+[^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
 
-[^3]: [**Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse**](posts/lemna_M1/index.qmd)
+06, 2022 / 08, 2022 - Warehouse worker - [*Hydrokit*](https://www.hydrokit.com/)
 
-June, 2022 - August, 2022 - **Warehouse worker** - [*Hydrokit*](https://www.hydrokit.com/)
-
-September, 2021 - May, 2022 - **Student exchange in Québec** - *Université de Sherbrooke*
+09, 2021 / 05, 2022 - Student exchange in Québec - *Université de Sherbrooke*
 
 ## Skills
 

@@ -2,7 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/service_civique/index.html",
+      "/posts/analyse_ressources_naturelles/index.html",
+      "/posts/var/index.html",
+      "/posts/kuznet curve/index.html",
       "/posts/design_factory/index.html",
       "/posts/europathon/index.html",
       "/posts/lemna_M1/index.html",
