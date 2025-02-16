@@ -6,8 +6,6 @@ title: "Optimisation des performances
 
 author: "Gabriel Ammour"
 date: "2023-08-29"
-categories: [School projects]
-description: "🐙"
 format: 
   html: 
     toc: false

@@ -2,15 +2,13 @@
     title: "Une analyse du lien entre phonèmes et fréquences sonores"
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html)"
     date: "2023-04-06"
-    categories: [School projects]
-    description: ""
     format: 
       html: 
-        toc: true
+        toc: false
         code-fold: true
 ---
 
-```{r,  echo=FALSE, eval=TRUE, message=FALSE}
+```{r,  echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
 {
   library(devtools)
   library(dplyr)

@@ -6,59 +6,61 @@ toc: false
 
 ## Education
 
-### 2022-2025 - **Master in Applied Econometrics** - *Nantes Université*
+2022-2025 - **Master in Applied Econometrics** - *Nantes Université*
 
-#### Master 2 
+- Master 2 
 
-- Internship - Analyse des données historiques des allocataires du RSA, *Département de la Loire Atlantique* 
+  - Internship - Analyse des données historiques des allocataires du RSA, *Département de la Loire Atlantique* 
     
-#### Gap year
--   DU Design Factory - *Polytech Nantes*
--   Service Civique - *Crous de Nantes*
+- Gap year
+  
+  -   DU Design Factory - *Polytech Nantes*
+  
+  -   Service Civique - *Crous de Nantes*
 
-####  Master [1](documents/Relevé%20de%20notes%202022-2023.pdf)
--   Master's thesis - *Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes*
--   Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
+- Master 1
+  
+  -   Master's thesis - *Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes*
+  
+  -   Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
 
-### 2019-2022 - **Bachelor in economics and management** - *Nantes Université*
+2019-2022 - **Bachelor in economics and management** - *Nantes Université*
 
-#### Year [3](documents/Document%20officiel%202022-06-07.pdf) : Economic Analysis
--   Exchange year in *University of Sherbrooke*, Québec
+- Year 3 : Economic Analysis
 
-#### Year [1](documents/Relevé%20de%20notes%202019-2020.pdf) - [2](documents/Relevé%20de%20notes%202020-2021.pdf) : International track
--   Classes given in English
+  -   Exchange year in *University of Sherbrooke*, Québec
+
+- Year 1 - 2 : International track
+
+  -   Classes given in English
 
 ## Experience
 
-### Academic
+July, 2024 - August, 2024 - **Waiter** - [*Plage Goéland*](https://www.plagegoeland.com/)
 
-#### Septembre 2023 - Février 2024 - **DU Design Factory**[^1] - *Polytech Nantes*
-
-[^1]: [**Design Factory**](posts/design_factory/index.qmd)
-
-#### Janvier 2024 - **Europathon**[^2] - *Centre d'excellence Jean Monnet UniPaix*
-
-[^2]: [**Europathon - A creative marathon on climate change and civil peace**](posts/europathon/index.qmd)
-
-#### Juin 2023 - Aout 2024 - **Research internship on hydrogene production through electrolysis**[^3] - *LEMNA*
-
-[^3]: [**Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse**](posts/lemna_M1/index.qmd)
-
-#### Septembre 2021 - Mai 2022 - **Student exchange in Québec** - *Université de Sherbrooke*
-
-### Professional
-
-#### July 2024 - August 2024 - **Waiter** - [*Plage Goéland*](https://www.plagegoeland.com/)
-
-#### Septembre 2023 - Avril 2024 - **Civic service : *Éco-Ambassadeur***[^4] - *Crous de Nantes*
+September, 2023 - April, 2024 - **Civic service : *Éco-Ambassadeur***[^4] - *Crous de Nantes*
 
 [^4]: [**Service Civique : Éco-Ambassadeur**](posts/service_civique/index.qmd)
 
-#### Février 2024 - **Tutor for *la nuit blanche des chercheurs.es*** , *Nantes Université*
+September, 2023 - February, 2024 - **DU Design Factory**[^1] - *Polytech Nantes*
 
-#### Octobre 2023 - **Sales and leafleting for a symphonic music concert** - *Orchestre National des Pays de la Loire (ONPL)*
+[^1]: [**Design Factory**](posts/design_factory/index.qmd)
 
-#### June 2022 - August 2022 - **Warehouse worker** - [*Hydrokit*](https://www.hydrokit.com/)
+February, 2024 - **Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/)** - *Nantes Université*
+
+January, 2024 - **Europathon**[^2] - *Centre d'excellence Jean Monnet UniPaix*
+
+[^2]: [**Europathon - A creative marathon on climate change and civil peace**](posts/europathon/index.qmd)
+
+October, 2023 - **Sales and leafleting for a symphonic music concert** - *Orchestre National des Pays de la Loire (ONPL)*
+
+June, 2023 - August, 2023 - **Research internship on hydrogene production through electrolysis**[^3] - *LEMNA*
+
+[^3]: [**Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse**](posts/lemna_M1/index.qmd)
+
+June, 2022 - August, 2022 - **Warehouse worker** - [*Hydrokit*](https://www.hydrokit.com/)
+
+September, 2021 - May, 2022 - **Student exchange in Québec** - *Université de Sherbrooke*
 
 ## Skills
 
@@ -69,7 +71,6 @@ toc: false
 -   Stata
 -   SQL
 -   SAS
--   VBA
 
 ### Academic writing / presentation
 
@@ -85,7 +86,7 @@ toc: false
 
 ## Languages
 
-### French - Native thong
+French - Native thong
 
-### English [TOEIC®](documents/TOEIC%20Digital%20Score%20Report.pdf) Listening and Reading test - A 980/990 score proof of C1 level according to CEFR
+English - [TOEIC®](documents/TOEIC%20Digital%20Score%20Report.pdf) Listening and Reading test : A 980/990 score proof of C1 level according to CEFR
 

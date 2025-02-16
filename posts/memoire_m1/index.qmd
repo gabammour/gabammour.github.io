@@ -2,7 +2,6 @@
     title: "Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes"
     author: "Gabriel Ammour" 
     date: "2023-06-01"
-    categories: [School projects]
     description: "Master's thesis"
     format: 
       html: 

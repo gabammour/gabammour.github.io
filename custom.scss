@@ -5,26 +5,10 @@
 
 /*-- scss:defaults --*/
 
-// Import font 
+/******************************************************************************/
+// Colors
 
-@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Raleway+Dots&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Rubik+Glitch&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Qahiri&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Qahiri&family=Rubik+Glitch&family=Rubik+Microbe&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
-
-// Define colors
-
+// Colors used 
 $white: #FFFFFF !default;
 $black: #000000 !default;
 $red: #b51818 !default;
@@ -33,21 +17,20 @@ $blue-1: #003884 !default;
 $orange: #CB410B !default;
 $orange-1: #F58426 !default;
 $orange-2: #FFEEE6 !default;
+$yellow : #ffffe5 !default;
 
-
-// Background
-
+// Background colors
 $body-color: $blue !default;   
-$body-bg: $white !default;
+$body-bg: $yellow !default;
 $link-color: $orange !default;
-$input-bg: $white !default;
+$link-decoration: inherit !default;
+$input-bg: $yellow !default;
 $popover-bg: $blue !default;
-$navbar-bg: $white !default;
-$sidebar-bg: $white !default;
-$footer-bg: $white !default;
+$navbar-bg: $yellow !default;
+$sidebar-bg: $yellow !default;
+$footer-bg: $yellow !default;
 
-// Code blocks
-
+// Code blocks colors
 $code-block-border-left: $orange !default;
 $code-block-border-left-style: solid;
 $code-block-border-left-size: 5px;
@@ -58,53 +41,98 @@ $btn-code-copy-color-active	: $blue ;
 $code-bg : $orange-2 !default; 
 $code-color : $blue !default; 
 
-// Table of content
-
+//Table of content
 $toc-color : $orange; 
+
+/******************************************************************************/
 
 // Fonts
 
+// Fonts used
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.newsreader-regular {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.newsreader-bold {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Font type  
 h1 {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif;
 }
 
 h2 {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif;
 }
 
 h3 {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif;
 }
 
 h4 {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif;
 }
 
-.quarto-title-meta .date {
-  font-family: 'Mountains of Christmas', sans-serif;  /* Date dans l'article */
+h5 {
+  font-family: 'Mountains of Christmas', serif;
 }
 
 .listing-date{
-  font-family: 'Mountains of Christmas', sans-serif; /* Date sur la page d'acceuil */
+  font-family: 'Mountains of Christmas', serif; /* Date sur la page d'acceuil */
 }
 
 .quarto-title-meta-heading {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif !important; /* Author & Published*/
+  font-weight: 700 !important;
+  font-size: 2em;
 }
 
 .quarto-title-meta-contents { 
-  font-family: 'Mountains of Christmas', sans-serif;  /* Commentaire */
+  font-family: 'Newsreader', serif; /* Nom de l'auteur */
+}
+
+.quarto-title-meta .date {
+  font-family: 'Newsreader', serif;  /* Date dans l'article */
 }
 
 .nav-footer-left {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif; /* ©2025 Gabriel AMMOUR */
 }
 
 .nav-footer-center {
-  font-family: 'Mountains of Christmas', sans-serif;
+  font-family: 'Mountains of Christmas', serif; /* Made with <3 and Quarto */
+}
+
+.nav-footer-right {
+  font-family: 'Mountains of Christmas', serif; /* Made with <3 and Quarto */
+  font-weight: 700 !important;
 }
 
 
+
+// Font size 
 $font-size-base: 1.1rem !default; 
 
 $h1-font-size: 3.2rem !default;
@@ -117,8 +145,21 @@ $toc-font-size:  1.1rem !default;
 
 $btn-font-size-sm: 1.2rem !default; // Police navbar
 
+/******************************************************************************/
+
 /*-- scss:rules --*/
 
+// Gabriel AMMOUR
+.main {
+  font-size: 3rem;
+  font-family: 'Mountains of Christmas';
+  color: $orange;
+  border: 1px solid $yellow;
+  padding: 10px;
+  background-color: $yellow;
+}
+
+// Navbar
 .navbar {
   font-size: 2rem;
   font-family: "Mountains of Christmas";
@@ -130,29 +171,69 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
   border-right-width: .5px;
   border-left-color: $blue;
   border-right-color: $blue;
-  border-bottom-color: $white;
+  border-bottom-color: $yellow;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  background-color: $white;
+  background-color: $yellow;
 }
 
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    color: $blue;
+}
+
+// Welcome to my blog
 .title {
   font-size: 3rem ;
   font-family: 'Mountains of Christmas';
   color: $orange;
-  background-color: $white;
+  background-color: $yellow;
 }
 
-.main {
-  font-size: 3rem;
-  font-family: 'Mountains of Christmas';
-  color: $orange;
-  border: 1px solid $white;
-  padding: 10px;
-  background-color: $white;
+.quarto-title-block .quarto-title-banner {
+    background: $yellow;
 }
+
+
+div.quarto-post {
+    display: flex;
+    gap: none;
+    margin-bottom: none;
+    border-bottom: none;
+}
+
+
+h2, .h2 {
+    border-bottom: none ;
+    padding-bottom: none ;
+}
+
+a:hover {
+    color: $blue;
+}
+
+#quarto-appendix.default {
+    border-top: 1px solid $blue;
+}
+
+#quarto-back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    border-radius: .25rem;
+    box-shadow: 0 .2rem .5rem #6c757d,0 0 .05rem #6c757d;
+    color: $blue;
+    text-decoration: none;
+    font-size: .9em;
+  
+    text-align: center;
+    left: 50%;
+    padding: .4rem .8rem;
+    transform: translate(-50%, 0);
+}
+
 
 .left-foot {
   color: $orange;
@@ -170,36 +251,7 @@ body .nav-footer {
     border-top: none;
 }
 
-h2, .h2 {
-    border-bottom: none ;
-    padding-bottom: none ;
-}
 
-
-#quarto-appendix.default {
-    border-top: 1px solid $blue;
-}
-
-div.quarto-post {
-    display: flex;
-    gap: none;
-    margin-bottom: none;
-    border-bottom: none;
-}
-
-
-#quarto-back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    border-radius: .25rem;
-    box-shadow: 0 .2rem .5rem #6c757d,0 0 .05rem #6c757d;
-    color: $blue;
-    text-decoration: none;
-    font-size: .9em;
-  
-    text-align: center;
-    left: 50%;
-    padding: .4rem .8rem;
-    transform: translate(-50%, 0);
+.quarto-body a {
+  text-decoration: none;
 }

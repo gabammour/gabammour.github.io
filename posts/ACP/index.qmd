@@ -2,11 +2,9 @@
     title: "Les déterminants du bonheur : Une analyse en composantes principles"
     author: "Gabriel Ammour, Noa Le Roux"
     date: "2022-11-01"
-    categories: [School projects]
-    description: "😃"
     format: 
       html: 
-        toc: true
+        toc: false
 ---
 
 Un très bon résumé de notre travail a déjà été fais par Noa [ici](https://noalrx.github.io/portfolio/posts/ADD/). Pour le pdf complet, cliquer [ici](Analyse%20de%20donnée%20descriptives%20-%20Les%20déterminants%20du%20bonheur%20-%20Ammour%20Gabriel,%20Le%20Roux%20Noa.pdf).

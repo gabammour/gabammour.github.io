@@ -8,7 +8,6 @@
 
 <meta name="author" content="Gabriel Ammour, Théo Bouedo">
 <meta name="dcterms.date" content="2023-04-06">
-<meta name="description" content="🔉">
 
 <title>Gabriel AMMOUR - Une analyse du lien entre phonèmes et fréquences sonores</title>
 <style>
@@ -93,7 +92,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -133,15 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Une analyse du lien entre phonèmes et fréquences sonores</h1>
-                  <div>
-        <div class="description">
-          🔉
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">School projects</div>
-              </div>
-                  </div>
+                      </div>
   </div>
     
   
@@ -168,45 +159,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#statistiques-descriptives" id="toc-statistiques-descriptives" class="nav-link" data-scroll-target="#statistiques-descriptives">Statistiques descriptives</a></li>
-  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">Classification</a></li>
-  <li><a href="#discrimination" id="toc-discrimination" class="nav-link" data-scroll-target="#discrimination">Discrimination</a>
-  <ul class="collapse">
-  <li><a href="#analyse-factorielle-discriminante" id="toc-analyse-factorielle-discriminante" class="nav-link" data-scroll-target="#analyse-factorielle-discriminante">Analyse Factorielle discriminante</a>
-  <ul class="collapse">
-  <li><a href="#variables-les-plus-discriminantes" id="toc-variables-les-plus-discriminantes" class="nav-link" data-scroll-target="#variables-les-plus-discriminantes">Variables les plus discriminantes</a></li>
-  </ul></li>
-  <li><a href="#pls-da" id="toc-pls-da" class="nav-link" data-scroll-target="#pls-da">PLS-DA</a>
-  <ul class="collapse">
-  <li><a href="#mesures-de-performances" id="toc-mesures-de-performances" class="nav-link" data-scroll-target="#mesures-de-performances">Mesures de performances</a></li>
-  <li><a href="#contribution-aux-composantes" id="toc-contribution-aux-composantes" class="nav-link" data-scroll-target="#contribution-aux-composantes">Contribution aux composantes</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'rlang' was built under R version 4.2.3</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'vctrs' was built under R version 4.2.3</code></pre>
-</div>
-</div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Les données présentées proviennent de l’ouvrage de référence intitulé “Elements of Statistical Learning” de Hastie, Tibshirani et Friedman (2009). Elles concernent l’analyse des phonèmes et ont été extraites de la base de données TIMIT, qui est une ressource largement utilisée dans la recherche en reconnaissance vocale. Le phonème est l’unité sonore de base de la langue parlée. C’est la plus petite unité distinctive de son qui permet de distinguer un mot d’un autre dans une langue donnée. Le but du projet est de discriminer cinq phonèmes, transcrits comme suit : <em>sh</em> pour “she”, <em>dcl</em> pour “dark”, <em>iy</em> pour la voyelle dans “she”, <em>aa</em> pour la voyelle dans “dark”, et <em>ao</em> pour la première voyelle dans “water”.</p>
@@ -218,16 +177,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell" data-layout-align="center">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mean_data, <span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> value, <span class="at">color =</span> phoneme, <span class="at">group =</span> phoneme)) <span class="sc">+</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>), <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>)) <span class="sc">+</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Variable (Periodogram)"</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Valeur moyenne"</span>) <span class="sc">+</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mean_data, <span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> value, <span class="at">color =</span> phoneme, <span class="at">group =</span> phoneme)) <span class="sc">+</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>), <span class="at">labels =</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(phoneme_stats[[<span class="dv">1</span>]]), <span class="at">by =</span> <span class="dv">50</span>)) <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Variable (Periodogram)"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Valeur moyenne"</span>) <span class="sc">+</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="fig-period" class="quarto-figure quarto-figure-center anchored">
@@ -256,16 +215,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(barplot_df, <span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> height)) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Index"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Va"</span>) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"royalblue"</span>) <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>)) <span class="sc">+</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">color_branches</span>(arbre, <span class="at">k =</span> <span class="dv">3</span>), <span class="at">labels =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(barplot_df, <span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> height)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Index"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Va"</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"royalblue"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"#FFFFF6"</span>)) <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">color_branches</span>(arbre, <span class="at">k =</span> <span class="dv">3</span>), <span class="at">labels =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="fig-classification" class="cell quarto-layout-panel">
 <figure class="figure">
@@ -478,11 +437,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res5, <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"PLS-DA sur cinq composantes"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res3, <span class="at">comp =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>), <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span><span class="st">" PLS-DA sur trois composantes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res5, <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span> <span class="st">"PLS-DA sur cinq composantes"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotIndiv</span>(plsda_res3, <span class="at">comp =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>), <span class="at">group =</span> Y_train, <span class="at">legend.title =</span> <span class="st">"Phonème"</span>, <span class="at">ellipse =</span> <span class="cn">TRUE</span>, <span class="at">legend =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">title =</span><span class="st">" PLS-DA sur trois composantes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="fig-plsda3" class="cell quarto-layout-panel">
 <figure class="figure">
@@ -518,10 +477,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div>
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">1</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 1"</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">2</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 2"</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">3</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualisation des individus dans l'espace des trois premières composantes principales</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">1</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 1"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">2</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 2"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plotLoadings</span>(plsda_res3, <span class="at">comp =</span> <span class="dv">3</span>, <span class="at">method =</span> <span class="st">'median'</span>, <span class="at">contrib =</span> <span class="st">"max"</span>, <span class="at">title =</span> <span class="st">"Composante 3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="fig-comp" class="cell quarto-layout-panel">
 <figure class="figure">

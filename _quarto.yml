@@ -4,19 +4,13 @@ project:
 
 website:
   reader-mode: false
-  back-to-top-navigation: true
+  back-to-top-navigation: false
   page-footer:
     foreground: "#CB410B"
     border: true
-    left: "[**© 2024 Gabriel Ammour**]{.left-foot}"
+    left: "[**© 2025 Gabriel AMMOUR**]{.left-foot}"
     center: "[**Made with <3 and Quarto**]{.left-foot}"
-    right: 
-      - icon: github
-        href: https://github.com/
-      - icon: linkedin
-        href: https://www.linkedin.com/in/gabriel-ammour-7263291b8
-      - icon: strava
-        href: https://www.strava.com/athletes/ammour_gabriel
+    right: "[*Linkedin*](www.linkedin.com/in/gammour) & [*Github*](https://github.com/gabammour)"
   title: "[**Gabriel AMMOUR**]{.main}"
   
   search: false 
@@ -40,10 +34,10 @@ format:
     theme: custom.scss
     mainfont: Newsreader 
     grid: 
-      sidebar-width: 500px
-      body-width: 1500px
-      margin-width: 500px
-      gutter-width: 3rem
+      sidebar-width: 500px # Gauche
+      body-width: 850px # Centre
+      margin-width: 500px # Droite
+      gutter-width: 2rem
     smooth-scroll: true
     
 editor: visual

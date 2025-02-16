@@ -2,7 +2,6 @@
     title: "Europathon - Un marathon créatif sur le changement climatique et la paix civile"
     author: "Gabriel Ammour" 
     date: "2024-01-25"
-    categories: [School projects]
     format: 
       html: 
         toc: false

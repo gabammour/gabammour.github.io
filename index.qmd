@@ -9,5 +9,5 @@ listing:
   filter-ui: false
   fields: [date, title]
 page-layout: article 
-title-block-banner: "#FFFFFF"
+title-block-banner: "#ffffe5"
 ---

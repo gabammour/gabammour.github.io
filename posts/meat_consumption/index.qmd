@@ -2,11 +2,9 @@
     title: "Studying meat consumption among college students"
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html), [Noa Le Roux](https://noalrx.github.io/portfolio/)"
     date: "2023-02-04"
-    categories: [School projects]
-    description: "🥩"
     format: 
       html: 
-        toc: true
+        toc: false
 ---
 
 # Introduction

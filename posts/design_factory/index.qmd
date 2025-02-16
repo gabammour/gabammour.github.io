@@ -2,11 +2,9 @@
     title: "Design Factory"
     author: "Gabriel Ammour" 
     date: "2024-02-18"
-    categories: [School projects]
-    description: "🔉"
     format: 
       html: 
-        toc: true
+        toc: false
         code-fold: true
     engine: knitr
     freeze: false    
@@ -16,20 +14,17 @@
 
 # Design Factory
 
-## Contexte 
+## Contexte
 
 La Design Factory (DF) est un Diplôme Universitaire (DU) porté par Polytech Nantes en collaboration avec Nantes Université et l'école de design Nantes Atlantique. Ce DU se définit comme un programme d'innovation interdisciplinaire centré sur les usages. En collaboration avec des partenaires extérieurs, des étudiants de différentes formations travaillent ensemble sur une problématique permettant de résulter à un prototype fonctionnel.
 
-Ce DU s'est déroulé lors de mon année de césure, entre le M1 et le M2.
-La DF se déroule sur 6 mois, de Septembre à Février. Le programme est organisé de manière à ce que les étudiants puissent suivre les cours de leur formation initiale tout en participant à la DF. C'est pourquoi, le volume hebdomadaire est relativement faible, à savoir 6h par semaine concentrées sur une journée (le mardi).
+Ce DU s'est déroulé lors de mon année de césure, entre le M1 et le M2. La DF se déroule sur 6 mois, de Septembre à Février. Le programme est organisé de manière à ce que les étudiants puissent suivre les cours de leur formation initiale tout en participant à la DF. C'est pourquoi, le volume hebdomadaire est relativement faible, à savoir 6h par semaine concentrées sur une journée (le mardi).
 
 Pour cette édition, nous avons eu l'opportunité de travailler en collaboration avec Air Pays de la Loire, l'organisme en charge de la surveillance de la qualité de l'air en région Loire Atlantique.
 
 ## Le projet
 
 Afin de vous donner une idée de notre projet, je vous propose de jeter un œil au support de notre soutenance finale.
-
-
 
 ```{css, echo=FALSE}
 #title-block-header .description {
