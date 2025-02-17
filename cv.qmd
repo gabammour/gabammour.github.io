@@ -1,12 +1,12 @@
 ---
-title: "[Curriculum Vitae](documents/CV_2025.pdf)"
+title: "[{{< animate pulse `Curriculum Vitae` repeat=infinite duration=2s >}}](Documents/CV_2025.pdf)"
 page-layout: article
 toc: false
 ---
 
 ## Education
 
-2022 / 2025 - Master in Applied Econometrics - *Nantes Université*
+2022 / 2025 - [Master in Applied Econometrics](https://sites.google.com/view/master-ecap/accueil) - *Nantes Université*
 
 - Master 2 
 
@@ -14,8 +14,8 @@ toc: false
     
 - Gap year
   
-  -   DU Design Factory - *Polytech Nantes*, *Nantes Université*, *L'École de Design Nantes Atlantique*
-  
+  -   DU Design Factory[^1] - *Polytech Nantes*, *Nantes Université*, *L'École de Design Nantes Atlantique*
+
   -   Civic Service Engagement - *Crous de Nantes*
 
 - Master 1
@@ -24,41 +24,41 @@ toc: false
   
   -   Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
 
-2019 / 2022 - Bachelor in economics and management - *Nantes Université*
+2019 / 2022 - [Bachelor in economics and management](https://iae.univ-nantes.fr/nos-formations/offre-de-formation/licence-economie-et-gestion) - *Nantes Université*
 
-- Year 3 : Economic Analysis
-
-  -   Exchange year in *University of Sherbrooke* - Québec
-
-- Year 1 - 2 : International track
-
-  -   Classes given in English
+  -   Student exchange program at [*Université de Sherbrooke*](https://www.usherbrooke.ca/)
 
 ## Experience
 
-07, 2024 / 08, 2024 - Waiter - [*Plage Goéland*](https://www.plagegoeland.com/)
+Film festival jury member - [*UNIVERCINÉ Nantes*](https://www.univercine-nantes.org/)
+<!-- 07, 2024 / 08, 2024 -  -->
 
-09, 2023 / 04, 2024 - Civic Service Engagement - *Crous de Nantes*
+Waiter - [*Plage Goéland*](https://www.plagegoeland.com/)
 
-09, 2023 / 02, 2024 - DU Design Factory[^1] - *Polytech Nantes*
+<!-- 09, 2023 / 04, 2024 -  -->
 
-[^1]: [Design Factory](posts/design_factory/index.qmd)
+Civic Service Engagement - *Crous de Nantes*
 
-02, 2024 - Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/) - *Nantes Université*
+<!-- 02, 2024 -  -->
 
-01, 2024 - Europathon[^2] - *Centre d'excellence Jean Monnet UniPaix*
+Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/) - *Nantes Université*
 
-[^2]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
+<!-- 01, 2024 -  -->
 
-10, 2023 - Sales and leafleting for a symphonic music concert - *Orchestre National des Pays de la Loire (ONPL)*
+Europathon - Changement climatique et paix civile en Europe[^2] - *Centre d'excellence Jean Monnet UniPaix*
 
-06, 2023 / 08, 2023 - Research internship on hydrogene production through electrolysis[^3] - *LEMNA*
+<!-- 10, 2023 -  -->
 
-[^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
+Sales and leafleting for a symphonic music concert - [*Orchestre National des Pays de la Loire (ONPL)*](https://onpl.fr/)
 
-06, 2022 / 08, 2022 - Warehouse worker - [*Hydrokit*](https://www.hydrokit.com/)
+<!-- 06, 2023 / 08, 2023 -  -->
 
-09, 2021 / 05, 2022 - Student exchange in Québec - *Université de Sherbrooke*
+Research internship on hydrogene production through electrolysis[^3] - [*Laboratoire d'Économie et de Management Nantes-Atlantique*](https://lemna.univ-nantes.fr/)
+
+<!-- 06, 2022 / 08, 2022 -  -->
+
+Warehouse worker - [*Hydrokit*](https://www.hydrokit.com/)
+
 
 ## Skills
 
@@ -88,3 +88,11 @@ French - Native thong
 
 English - [TOEIC®](documents/TOEIC%20Digital%20Score%20Report.pdf) Listening and Reading test : A 980/990 score proof of C1 level according to CEFR
 
+
+<!-- Footnotes  -->
+
+[^1]: [Design Factory](posts/design_factory/index.qmd)
+
+[^2]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
+
+[^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)

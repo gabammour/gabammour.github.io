@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my blog !"
+title: "{{< animate pulse `Welcome to my blog !` repeat=infinite duration=2s >}}"
 listing:
   contents: posts
   sort: "date desc"

@@ -259,3 +259,15 @@ body .nav-footer {
 .quarto-body a {
   text-decoration: none;
 }
+
+.animated-title {
+  display: inline-block;
+  animation: flipTitle 4s infinite;
+}
+
+@keyframes flipTitle {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(180deg); }
+  100% { transform: rotateY(360deg); }
+}
+

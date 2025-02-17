@@ -8,10 +8,10 @@ website:
   page-footer:
     foreground: "#CB410B"
     border: true
-    left: "[**© 2025 Gabriel AMMOUR**]{.left-foot}"
-    center: "[*Linkedin*](https://www.linkedin.com/in/gabriel-ammour-7263291b8) - [*Github*](https://github.com/gabammour) - [Strava](https://www.strava.com/athletes/115618824){.left-foot}"
-    right: "[**Made with <3 and Quarto**]{.left-foot}"
-  title: "[**Gabriel AMMOUR**]{.main}"
+    left: "[**{{< animate fadeInLeftBig  `© 2025 Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.left-foot}"
+    center: "[{{< animate flip `Linkedin` repeat=infinite duration=10s >}}](https://www.linkedin.com/in/gabriel-ammour-7263291b8)  [{{< animate flip `Github` repeat=infinite duration=5s >}}](https://github.com/gabammour)  [{{< animate flip `Strava` repeat=infinite duration=10s >}}](https://www.strava.com/athletes/115618824){.left-foot}"
+    right: "[**{{< animate fadeInRightBig `Made with <3 and Quarto` repeat=1 duration=3s >}}**]{.left-foot}"
+  title: "[**{{< animate bounceInDown `Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.main}"
   
   search: false 
     
@@ -20,13 +20,13 @@ website:
     foreground: "#b51818"
     
     right:
-      - text: "Blog"
+      - text: "{{< animate fadeInRightBig `Blog` repeat=1 duration=3s >}}"
         file: index.qmd
      
-      - text: "Curiculum Vitae"
+      - text: "{{< animate fadeInRightBig `Curiculum Vitae` repeat=1 duration=3s >}}"
         file: cv.qmd
     
-      - text: "Contact"
+      - text: "{{< animate fadeInRightBig `Contact` repeat=1 duration=3s >}}"
         file: contact.qmd
 
 format:
