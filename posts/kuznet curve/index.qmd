@@ -7,7 +7,6 @@ regression methods"
     format: 
       html: 
         toc: false
-        code-fold: true
     engine: knitr
     freeze: false    
     slides:
@@ -15,7 +14,6 @@ regression methods"
 ---
 
 Ce dossier a été réalisé dans le cadre du cours *Économétrie des données de panel* présenté par [François-Charles WOLFF](https://sites.google.com/site/francoischarleswolff/wolff-francois-charles). L'objectif du cours était d'acquérir les compétences nécessaires pour réaliser des analyses économétriques sur des données de panel à l'aide du logiciel Stata.
-
 
 ```{css, echo=FALSE}
 #title-block-header .description {
