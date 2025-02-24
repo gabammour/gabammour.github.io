@@ -20,13 +20,13 @@ website:
     foreground: "#b51818"
     
     right:
-      - text: "{{< animate fadeInRightBig `Blog` repeat=1 duration=3s >}}"
+      - text: "**{{< animate fadeInRightBig `Blog` repeat=1 duration=3s >}}**"
         file: index.qmd
      
-      - text: "{{< animate fadeInRightBig `Curiculum Vitae` repeat=1 duration=3s >}}"
+      - text: "**{{< animate fadeInRightBig `Curiculum Vitae` repeat=1 duration=3s >}}**"
         file: cv.qmd
     
-      - text: "{{< animate fadeInRightBig `Contact` repeat=1 duration=3s >}}"
+      - text: "**{{< animate fadeInRightBig `Contact` repeat=1 duration=3s >}}**"
         file: contact.qmd
 
 format:
@@ -41,3 +41,4 @@ format:
     smooth-scroll: true
     
 editor: visual
+

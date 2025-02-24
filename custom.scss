@@ -25,7 +25,7 @@ $body-bg: $yellow !default;
 $link-color: $orange !default;
 $link-decoration: inherit !default;
 $input-bg: $yellow !default;
-$popover-bg: $blue !default;
+$popover-bg: $orange !default;
 $navbar-bg: $yellow !default;
 $sidebar-bg: $yellow !default;
 $footer-bg: $yellow !default;
@@ -101,6 +101,8 @@ h5 {
 
 .listing-date{
   font-family: 'Mountains of Christmas', serif; /* Date sur la page d'acceuil */
+  color: $blue;
+  font-weight: 700 !important;
 }
 
 .quarto-title-meta-heading {
@@ -129,8 +131,6 @@ h5 {
   font-family: 'Mountains of Christmas', serif; /* Made with <3 and Quarto */
   font-weight: 700 !important;
 }
-
-
 
 // Font size 
 $font-size-base: 1.1rem !default; 
@@ -179,10 +179,19 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
   background-color: $yellow;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: $orange;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $blue !important; /* Remplace "blue" par la couleur souhaitée */
+    text-decoration: none; /* Optionnel : ajoute un soulignement */
+}
 
 .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
     color: $blue;
 }
+
 
 // Welcome to my blog
 .title {
@@ -196,12 +205,24 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
     background: $yellow;
 }
 
-
 div.quarto-post {
     display: flex;
     gap: none;
     margin-bottom: none;
     border-bottom: none;
+}
+
+div.quarto-post a {
+    color: $orange;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+div.quarto-post a:hover {
+    color: $blue !important; /* Remplace "blue" par la teinte exacte si nécessaire */
+    text-decoration: none; /* Optionnel : ajoute un soulignement au survol */
 }
 
 

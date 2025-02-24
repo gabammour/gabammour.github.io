@@ -1,5 +1,5 @@
 ---
 title: "{{< animate pulse `Contact` repeat=infinite duration=2s >}}"
 ---
- 
-We can connect at *gabriel.ammour@gmail.com*
+
+We can connect at *gabriel.ammour\@gmail.com*
