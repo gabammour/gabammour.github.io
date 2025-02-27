@@ -12,7 +12,7 @@
        pdf: "dossier_var.pdf"  
 ---
 
-Ce dossier a été réalisé dans le cadre du cours *Séries temporelles multivariées* présenté par [Zakaria Moussa](https://www.univ-nantes.fr/zakaria-moussa). L'objectif du cours était d'identifier une problématique économique et d'y répondre en utilisant des méthodes d'analyse de séries temporelles multivariées, notamment la méthode VAR.
+This paper was written as part of the course *Multivariate Time Series* presented by [Zakaria Moussa](https://www.univ-nantes.fr/zakaria-moussa). The aim of the course was to identify an economic problem and answer it using multivariate time series analysis methods, in particular the VAR method.
 
 ```{css, echo=FALSE}
 #title-block-header .description {

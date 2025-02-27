@@ -12,7 +12,8 @@
        pdf: "analyse_ressources_naturelles.pdf"  
 ---
 
-Cette présentation orale s'est déroulé dans le cadre du cours *Analyse des marchés des ressources naturelles* présenté par [Camille AIT-YOUCEF](https://sites.google.com/view/camille-ait-youcef/home/research). L'objectif était de présenter un article universitaire tout en le mettant en relation avec les thèmes abordés lors du cours. Vous pouvez retrouver l'article en question [ici](https://www.sciencedirect.com/science/article/pii/S0301421520305486?casa_token=dOEH3zt-rgAAAAAA:5cjc8NuUvnIAmZ0LRAp3fNhao2Ys1uDJ3aLFu1TR6I0uLxvX0q_PCnj2lrboEtGIj5qRYYi1WQ).
+This presentation was given as part of the course ‘Analysis of natural resource markets’ presented by [Camille AIT-YOUCEF](https://sites.google.com/view/camille-ait-youcef/home/research). The purpose was to present an academic article in relation to the topics covered in the course. You can find the article in question [here](https://www.sciencedirect.com/science/article/pii/S0301421520305486?casa_token=dOEH3zt-rgAAAAAA:5cjc8NuUvnIAmZ0LRAp3fNhao2Ys1uDJ3aLFu1TR6I0uLxvX0q_PCnj2lrboEtGIj5qRYYi1WQ).
+
 
 ```{css, echo=FALSE}
 #title-block-header .description {

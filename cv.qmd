@@ -62,31 +62,25 @@ Warehouse worker - [*Hydrokit*](https://www.hydrokit.com/)
 
 ## Skills
 
-### Data Science
+### Languages 
 
 -   R
 -   Python
 -   Stata
--   SQL
--   SAS
-
-### Academic writing / presentation
-
 -   $\LaTeX$
--   Quarto
--   Zotero
--   LimeSurvey
--   R Shiny
 
 ### Softwares
 
--   RStudio - VSCode - Jupyter - GitHub
+- RStudio 
+- VSCode  
+- QGIS 
+- Zotero
 
 ## Languages
 
 French - Native thong
 
-English - [TOEIC®](documents/TOEIC%20Digital%20Score%20Report.pdf) Listening and Reading test : A 980/990 score proof of C1 level according to CEFR
+English - [TOEIC®](documents/TOEIC_2024.pdf) Listening and Reading test : A 975/990 score proof of C1 level according to CEFR
 
 
 <!-- Footnotes  -->

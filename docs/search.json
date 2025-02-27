@@ -67,7 +67,7 @@
     "href": "cv.html#skills",
     "title": "Curriculum Vitae",
     "section": "Skills",
-    "text": "Skills\n\nData Science\n\nR\nPython\nStata\nSQL\nSAS\n\n\n\nAcademic writing / presentation\n\n\\(\\LaTeX\\)\nQuarto\nZotero\nLimeSurvey\nR Shiny\n\n\n\nSoftwares\n\nRStudio - VSCode - Jupyter - GitHub"
+    "text": "Skills\n\nLanguages\n\nR\nPython\nStata\n\\(\\LaTeX\\)\n\n\n\nSoftwares\n\nRStudio\nVSCode\n\nQGIS\nZotero"
   },
   {
     "objectID": "cv.html#languages",
@@ -417,21 +417,21 @@
     "href": "posts/kuznet curve/index.html",
     "title": "Testing the empirical validity of the Kuznets environmental curve on 18 countries from Asia and Oceania using panel regression methods",
     "section": "",
-    "text": "Ce dossier a été réalisé dans le cadre du cours Économétrie des données de panel présenté par François-Charles WOLFF. L’objectif du cours était d’acquérir les compétences nécessaires pour réaliser des analyses économétriques sur des données de panel à l’aide du logiciel Stata."
+    "text": "This paper was produced as part of the ‘Panel Data Econometrics’ course presented by François-Charles WOLFF. The aim of the course was to acquire the skills needed to carry out econometric analyses of panel data using Stata software."
   },
   {
     "objectID": "posts/var/index.html",
     "href": "posts/var/index.html",
     "title": "Does oil price affect New Mexico’s unemployment rate in the short term ? An SVAR approach (2010-2019)",
     "section": "",
-    "text": "Ce dossier a été réalisé dans le cadre du cours Séries temporelles multivariées présenté par Zakaria Moussa. L’objectif du cours était d’identifier une problématique économique et d’y répondre en utilisant des méthodes d’analyse de séries temporelles multivariées, notamment la méthode VAR."
+    "text": "This paper was written as part of the course Multivariate Time Series presented by Zakaria Moussa. The aim of the course was to identify an economic problem and answer it using multivariate time series analysis methods, in particular the VAR method."
   },
   {
     "objectID": "posts/analyse_ressources_naturelles/index.html",
     "href": "posts/analyse_ressources_naturelles/index.html",
     "title": "Heterogeneous preferences for shale water management: Evidence from a choice experiment in Fuling shale gas field, southwest China, Liuyang Yao, Bo Sui, 2020",
     "section": "",
-    "text": "Cette présentation orale s’est déroulé dans le cadre du cours Analyse des marchés des ressources naturelles présenté par Camille AIT-YOUCEF. L’objectif était de présenter un article universitaire tout en le mettant en relation avec les thèmes abordés lors du cours. Vous pouvez retrouver l’article en question ici."
+    "text": "This presentation was given as part of the course ‘Analysis of natural resource markets’ presented by Camille AIT-YOUCEF. The purpose was to present an academic article in relation to the topics covered in the course. You can find the article in question here."
   },
   {
     "objectID": "posts/analyse_ressources_naturelles/index.html#animate-flip-flip-repeatinfinite-duration4s",
@@ -439,5 +439,12 @@
     "title": "Heterogeneous preferences for shale water management: Evidence from a choice experiment in Fuling shale gas field, southwest China, Liuyang Yao, Bo Sui, 2020",
     "section": "",
     "text": "Cette flip présentation orale s’est déroulé dans le cadre du cours Analyse des marchés des ressources naturelles présenté par Camille AIT-YOUCEF. L’objectif était de présenter un article universitaire tout en le mettant en relation avec les thèmes abordés lors du cours. Vous pouvez retrouver l’article en question ici."
+  },
+  {
+    "objectID": "cv.html#languages-1",
+    "href": "cv.html#languages-1",
+    "title": "Curriculum Vitae",
+    "section": "Languages",
+    "text": "Languages\nFrench - Native thong\nEnglish - TOEIC® Listening and Reading test : A 975/990 score proof of C1 level according to CEFR"
   }
 ]

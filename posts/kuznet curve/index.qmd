@@ -13,7 +13,7 @@ regression methods"
        pdf: "kuznet_curve.pdf"  
 ---
 
-Ce dossier a été réalisé dans le cadre du cours *Économétrie des données de panel* présenté par [François-Charles WOLFF](https://sites.google.com/site/francoischarleswolff/wolff-francois-charles). L'objectif du cours était d'acquérir les compétences nécessaires pour réaliser des analyses économétriques sur des données de panel à l'aide du logiciel Stata.
+This paper was produced as part of the ‘Panel Data Econometrics’ course presented by [François-Charles WOLFF](https://sites.google.com/site/francoischarleswolff/wolff-francois-charles). The aim of the course was to acquire the skills needed to carry out econometric analyses of panel data using Stata software.
 
 ```{css, echo=FALSE}
 #title-block-header .description {
