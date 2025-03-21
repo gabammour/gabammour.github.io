@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/spatial/index.html",
+      "/posts/nvidia/index.html",
       "/posts/analyse_ressources_naturelles/index.html",
       "/posts/var/index.html",
       "/posts/kuznet curve/index.html",
