@@ -9,7 +9,7 @@ website:
     foreground: "#CB410B"
     border: true
     left: "[**{{< animate fadeInLeftBig  `© 2025 Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.left-foot}"
-    center: "[{{< animate flip `Linkedin` repeat=infinite duration=10s >}}](https://www.linkedin.com/in/gabriel-ammour-7263291b8)  [{{< animate flip `Github` repeat=infinite duration=5s >}}](https://github.com/gabammour)  [{{< animate flip `Strava` repeat=infinite duration=10s >}}](https://www.strava.com/athletes/115618824){.left-foot}"
+    center: "[{{< animate pulse `Linkedin` repeat=infinite duration=2s >}}](https://www.linkedin.com/in/gabriel-ammour-7263291b8)  [{{< animate pulse `Github` repeat=infinite duration=2s >}}](https://github.com/gabammour)  [{{< animate pulse `Strava` repeat=infinite duration=2s >}}](https://www.strava.com/athletes/115618824){.left-foot}"
     right: "[**{{< animate fadeInRightBig `Made with <3 and Quarto` repeat=1 duration=3s >}}**]{.left-foot}"
   title: "[**{{< animate bounceInDown `Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.main}"
   
