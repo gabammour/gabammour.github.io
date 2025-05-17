@@ -1,5 +1,5 @@
 ---
-title: "{{< animate pulse `Welcome to my blog !` repeat=infinite duration=2s >}}"
+title: "{{< animate pulse  `Welcome on my blog !` repeat=infinite duration=2s >}}"
 listing:
   contents: posts
   sort: "date desc"
@@ -9,5 +9,5 @@ listing:
   filter-ui: false
   fields: [date, title]
 page-layout: article 
-title-block-banner: "#fffff5"
+title-block-banner: "#fffffd"
 ---

@@ -17,7 +17,7 @@ $blue-1: #003884 !default;
 $orange: #CB410B !default;
 $orange-1: #F58426 !default;
 $orange-2: #FFEEE6 !default;
-$yellow : #fffff5 !default;
+$yellow : #fffffd !default;
 
 // Background colors
 $body-color: $blue !default;   
@@ -51,6 +51,8 @@ $toc-color : $orange;
 // Fonts used
 
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
 
 .mountains-of-christmas-regular {
   font-family: "Mountains of Christmas", serif;

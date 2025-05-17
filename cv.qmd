@@ -1,5 +1,5 @@
 ---
-title: "[{{< animate pulse `Curriculum Vitae` repeat=infinite duration=2s >}}](Documents/CV_2025.pdf)"
+title: "{{< animate pulse `Curriculum Vitae` repeat=infinite duration=2s >}}"
 page-layout: article
 toc: false
 ---
@@ -83,7 +83,6 @@ French - Native thong
 
 English - [TOEIC®](documents/TOEIC_2024.pdf) Listening and Reading test : A 975/990 score proof of C1 level according to CEFR
 
-
 <!-- Footnotes  -->
 
 [^1]: [Design Factory](posts/design_factory/index.qmd)
@@ -91,3 +90,5 @@ English - [TOEIC®](documents/TOEIC_2024.pdf) Listening and Reading test : A 975
 [^2]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
 
 [^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
+
+
