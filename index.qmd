@@ -1,9 +1,16 @@
 ---
-title: "{{< animate pulse  `Welcome to my blog !` repeat=infinite duration=2s >}}"
+title: "   " 
 listing:
-  contents: posts
+  contents: 
+    - posts/books
+    - posts/kuznet
+    - posts/numerique_dp
+    - posts/nvidia
+    - posts/spatial
+    - posts/var
+    - posts/NLP
   sort: "date desc"
-  type: default
+  type: grid
   categories: false
   sort-ui: false
   filter-ui: false

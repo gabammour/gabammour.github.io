@@ -6,6 +6,8 @@ title: "Optimisation des performances
 
 author: "Gabriel Ammour"
 date: "2023-08-29"
+categories:
+      - Archive 
 format: 
   html: 
     toc: false
@@ -52,6 +54,7 @@ Pour ce stage, j'ai été amené à travailler sur un projet de recherche portan
   <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
 </div>
 ```
+
 ## Résultats
 
 Pour en savoir plus sur les résultats de ce stage, je vous invite à consulter le rapport de stage que j'ai rédigé à l'issue de ce stage. Vous y trouverez une présentation détaillée du sujet de recherche, des méthodes utilisées, des résultats obtenus et des perspectives de recherche. Pour télécharger le rapport, vous pouvez cliquer [ici](Stage%20from%20Gabriel.pdf).

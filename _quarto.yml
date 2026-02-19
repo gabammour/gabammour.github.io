@@ -5,38 +5,47 @@ project:
 website:
   reader-mode: false
   back-to-top-navigation: false
+  title: "[***Gabriel AMMOUR***]{.main}"
   page-footer:
     foreground: "#CB410B"
     border: true
-    left: "[**{{< animate fadeInLeftBig  `© 2025 Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.left-foot}"
-    center: "[{{< animate pulse `Linkedin` repeat=infinite duration=2s >}}](https://www.linkedin.com/in/gabriel-ammour-7263291b8)  [{{< animate pulse `Github` repeat=infinite duration=2s >}}](https://github.com/gabammour)  [{{< animate pulse `Strava` repeat=infinite duration=2s >}}](https://www.strava.com/athletes/115618824){.left-foot}"
-    right: "[**{{< animate fadeInRightBig `Made with Quarto` repeat=1 duration=3s >}}**]{.left-foot}"
-  title: "[**{{< animate bounceInDown `Gabriel AMMOUR` repeat=1 duration=3s >}}**]{.main}"
-  
+    right: "[***© 2026 Gabriel AMMOUR***]{.left-foot}"
+    # right:
+    
+    #   - text: "Qui suis-je ?"
+    #     file: about.qmd
+    
+    #   - text: "Mon blog"
+    #     file: index.qmd
+    
+    #   - text: "Curiculum Vitae"
+    #     file: cv.qmd
+
   search: false 
   
   navbar:
 
     foreground: "#b51818"
+        
+    right: 
     
-    right:
-      - text: "**{{< animate fadeInRightBig `Blog` repeat=1 duration=3s >}}**"
+      - text: "qui suis-je ?"
+        file: about.qmd  
+        
+      - text: "mon blog"
         file: index.qmd
-     
-      - text: "**{{< animate fadeInRightBig `Curiculum Vitae` repeat=1 duration=3s >}}**"
+    
+      - text: "curiculum vitae"
         file: cv.qmd
     
-      - text: "**{{< animate fadeInRightBig `Contact` repeat=1 duration=3s >}}**"
-        file: contact.qmd
-
 format:
   html:
     theme: custom.scss
-    mainfont: Newsreader 
+    mainfont: IBM Plex Serif  
     grid: 
-      sidebar-width: 0px # Gauche
-      body-width: 500px # Centre
-      margin-width: 0px # Droite
+      sidebar-width: 200px # Gauche
+      body-width: 800px # Centre
+      margin-width: 200px # Droite
       gutter-width: 2rem
     smooth-scroll: true
     

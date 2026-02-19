@@ -2,6 +2,8 @@
     title: "Une analyse du lien entre phonèmes et fréquences sonores"
     author: "Gabriel Ammour, [Théo Bouedo](https://lovely-dolphin-e68198.netlify.app/my_work.html)"
     date: "2023-04-06"
+    categories:
+      - Archive    
     format: 
       html: 
         toc: false

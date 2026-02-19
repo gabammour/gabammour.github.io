@@ -2,6 +2,8 @@
     title: "Does oil price affect New Mexico’s unemployment rate in the short term ? An SVAR approach (2010-2019)"
     author: "Gabriel Ammour & Noa Le Roux" 
     date: "2025-02-06"
+    categories:
+      - Master 2    
     format: 
       html: 
         toc: false
@@ -11,8 +13,8 @@
     slides:
        pdf: "dossier_var.pdf"  
 ---
-
-This paper was written as part of the course *Multivariate Time Series* presented by [Zakaria Moussa](https://www.univ-nantes.fr/zakaria-moussa). The aim of the course was to identify an economic problem and answer it using multivariate time series analysis methods, in particular the VAR method.
+<!-- 
+This paper was written as part of the course *Multivariate Time Series* presented by [Zakaria Moussa](https://www.univ-nantes.fr/zakaria-moussa). The aim of the course was to identify an economic problem and answer it using multivariate time series analysis methods, in particular the VAR method. -->
 
 ```{css, echo=FALSE}
 #title-block-header .description {
@@ -42,6 +44,6 @@ This paper was written as part of the course *Multivariate Time Series* presente
 
 ```{=html}
 <div class="embed-container">
-  <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
+  <iframe src="`r rmarkdown::metadata$slides$pdf`#toolbar=0&navpanes=0" style="border: 0.5px"></iframe>
 </div>
 ```

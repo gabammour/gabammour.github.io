@@ -1,0 +1,40 @@
+---
+    title: "Ma bibliothèque"
+    categories:
+      - Livres    
+    format: 
+      html: 
+        toc: false
+---
+
+Bonne lecture...
+
+## 2026
+
+![**Géopolitique du numérique : L'impérialisme à pas de géants**, Ophélie Coelho](geopolitque_du_numerique.jpg){width="10%" fig-align="left"}
+
+![**Les besoins artificiels : Comment sortir du consumérisme**, Razmig Keucheyan](consumérisme.jpg){width="10%" fig-align="left"}
+
+## 2025
+
+![**Désarmer le béton : Ré-habiter la terre**, Léa Hobson](béton.jpg){width="10%" fig-align="left"}
+
+![**L'ère de la post-vérité : Comment les algorithmes changent notre rapport à la réalité**, Michaël Lainé](post_verite.jpeg){width="10%" fig-align="left"}
+
+![**Boom Boom : Politiques du dancefloor**, Arnaud Idelon](dancefloor.jpg){width="10%" fig-align="left"}
+
+![**Éloge du bug : Être libre à l'heure à l'époque du numérique**, Marcello Vitali-Rosati](eloge_du_bug.jpg){width="10%" fig-align="left"}
+
+![**Nantes, ville révoltée**, Collectif](nantes.jpg){width="10%" fig-align="left"}
+
+![**Martin Eden**, Jack London](martin_eden.jpg){width="10%" fig-align="left"}
+
+![**Sur la route**, Jack Kerouac](sur_la_route.jpg){width="10%" fig-align="left"}
+
+![**Ceux qui restent : Faire sa vie dans les campagnes en déclin**, Benoît Coquard](ceux_qui_restent.jpg){width="10%" fig-align="left"}
+
+![**La droitisation française : Mythe et réalités**, Vincent Tiberj](droitisation.jpg){width="10%" fig-align="left"}
+
+![**Le Maître et Marguerite**, Mikhaïl Boulgakov](maitre_et_marguerite.jpeg){width="10%" fig-align="left"}
+
+![**Bartleby le scribe**, Herman Melville](bartleby.jpg){width="10%" fig-align="left"}

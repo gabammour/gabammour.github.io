@@ -1,0 +1,11 @@
+---
+    title: "La souveraineté numérique dans la fonction publique territoriale"
+    author: "Gabriel Ammour"
+    date: today
+    categories:
+      - Billets    
+    format: 
+      html: 
+        toc: false
+    draft: true
+---

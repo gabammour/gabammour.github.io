@@ -2,6 +2,8 @@
     title: "Heterogeneous preferences for shale water management: Evidence from a choice experiment in Fuling shale gas field, southwest China, Liuyang Yao, Bo Sui, 2020"
     author: "Gabriel Ammour & Noa Le Roux" 
     date: "2025-02-07"
+    categories:
+      - Mes études     
     format: 
       html: 
         toc: false

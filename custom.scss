@@ -54,84 +54,97 @@ $toc-color : $orange;
 
 @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
 
-.mountains-of-christmas-regular {
-  font-family: "Mountains of Christmas", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
 
-.mountains-of-christmas-bold {
-  font-family: "Mountains of Christmas", serif;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 
-.newsreader-regular {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
 
-.newsreader-bold {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Zalando Sans Expanded:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 // Font type  
 h1 {
-  font-family: 'Mountains of Christmas', serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500 !important;
+  font-style: normal;
 }
 
 h2 {
-  font-family: 'Mountains of Christmas', serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400 !important;
+  font-style: normal;
+  
 }
 
 h3 {
-  font-family: 'Mountains of Christmas', serif;
+  font-family: 'IBM Plex Mono', sans-monospace;
+  font-weight: 300 !important;
+  font-style: normal;
+
 }
 
 h4 {
-  font-family: 'Mountains of Christmas', serif;
+  font-family: 'IBM Plex Mono', sans-monospace;
+  font-weight: 200 !important;
+  font-style: normal;
 }
 
 h5 {
-  font-family: 'Mountains of Christmas', serif;
+  font-family: 'IBM Plex Mono', sans-monospace;
 }
 
-.listing-date{
-  font-family: 'Mountains of Christmas', serif; /* Date sur la page d'acceuil */
-  color: $blue;
-  font-weight: 700 !important;
+p {
+  text-align: start;
+  font-weight: 350;
+}
+
+div.quarto-about-jolla main {
+	text-align: left !important;
+}
+
+div.quarto-post .body h3.listing-title, div.quarto-post .body .listing-title.h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+    font-family: 'IBM Plex Mono';
 }
 
 .quarto-title-meta-heading {
-  font-family: 'Mountains of Christmas', serif !important; /* Author & Published*/
+  font-family: 'IBM Plex Mono', monospace !important; /* Author & Published*/
   font-weight: 700 !important;
   font-size: 2em;
 }
 
 .quarto-title-meta-contents { 
-  font-family: 'Newsreader', serif; /* Nom de l'auteur */
+  font-family: 'IBM Plex Mono', monospace; /* Nom de l'auteur */
 }
 
 .quarto-title-meta .date {
-  font-family: 'Newsreader', serif;  /* Date dans l'article */
+  font-family: 'IBM Plex Mono', monospace;  /* Date dans l'article */
 }
 
 .nav-footer-left {
-  font-family: 'Mountains of Christmas', serif; /* ©2025 Gabriel AMMOUR */
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 300 !important;/* ©2025 Gabriel AMMOUR */
 }
 
 .nav-footer-center {
-  font-family: 'Mountains of Christmas', serif; /* Made with <3 and Quarto */
+  font-family: 'IBM Plex Mono', monospace; 
+  font-weight: 300 !important; /* Made with <3 and Quarto */
 }
 
+
 .nav-footer-right {
-  font-family: 'Mountains of Christmas', serif; /* Made with <3 and Quarto */
-  font-weight: 700 !important;
+  font-family: 'IBM Plex Mono', monospace; /* Made with <3 and Quarto */
+  font-weight: 300 !important;
 }
 
 // Font size 
@@ -153,8 +166,8 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 
 // Gabriel AMMOUR
 .main {
-  font-size: 3rem;
-  font-family: 'Mountains of Christmas';
+  font-size: 1.3rem;
+  font-family: "IBM Plex Mono";
   color: $orange;
   border: 1px solid $yellow;
   padding: 10px;
@@ -163,8 +176,9 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
 
 // Navbar
 .navbar {
-  font-size: 2rem;
-  font-family: "Mountains of Christmas";
+  font-size: 1rem;
+  font-family: "IBM Plex Mono";
+  font-weight: 200;
   color: $orange;
   border: 0px solid $orange;
   border-top-width: 0px;
@@ -181,6 +195,10 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
   background-color: $yellow;
 }
 
+b, strong {
+	font-weight: 500;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: $orange;
 }
@@ -194,17 +212,27 @@ $btn-font-size-sm: 1.2rem !default; // Police navbar
     color: $blue;
 }
 
-
+ 
 // Welcome to my blog
 .title {
   font-size: 3rem ;
-  font-family: 'Mountains of Christmas';
+  font-family: 'IBM Plex Mono';
   color: $orange;
   background-color: $yellow;
+  font-weight: 200 !important;
 }
 
 .quarto-title-block .quarto-title-banner {
     background: $yellow;
+}
+
+.quarto-title-banner .quarto-title .title {
+	font-weight: 500;
+}
+
+.quarto-title-banner {
+	padding-top: 2.5em;
+	padding-bottom: 0em;
 }
 
 div.quarto-post {
@@ -221,12 +249,21 @@ div.quarto-post a {
     text-decoration: none;
 }
 
+#quarto-margin-sidebar .quarto-listing-category {
+	font-size: 1rem;
+	font-family: IBM Plex Mono;
+	font-weight: lighter;
+}
 
 div.quarto-post a:hover {
     color: $blue !important; /* Remplace "blue" par la teinte exacte si nécessaire */
     text-decoration: none; /* Optionnel : ajoute un soulignement au survol */
 }
 
+/* Photo sur la page d'accueil*/
+div.quarto-about-jolla img.round {
+	border-radius: 100%;
+}
 
 h2, .h2 {
     border-bottom: none ;
@@ -264,11 +301,6 @@ a:hover {
   
 }
 
-.nav-footer-center {
-    font-family: "Mountains of Christmas",serif;
-    font-weight: 700 !important;
-}
-
 .footer {
   color: $orange;
   border-top: none;
@@ -294,3 +326,86 @@ body .nav-footer {
   100% { transform: rotateY(360deg); }
 }
 
+.quarto-title .quarto-categories .quarto-category {
+	padding: .2em .5em;
+	font-size: .65em;
+	text-transform: uppercase;
+	border: solid 1px;
+	border-radius: .2rem;
+	opacity: 0;
+	font-family: IBM Plex Mono;
+}
+
+.panel-caption, .figure-caption, figcaption {
+	color: #000335;
+}
+
+
+.card {
+	position: relative;
+	/* display: flex; */
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 0px solid #000335;
+	border-radius: 1.5rem;
+}
+
+.card-body {
+	flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	padding: 1rem 1rem;
+	background-color: #cb410b12;
+	border-radius: 1.5rem;
+}
+
+.listing-date {
+	font-family: "IBM Plex Mono",monospace;
+	color: #CB410B;
+	font-weight: 200 !important;
+  font-size: .8em;
+}
+
+.title-block {
+  background-color: #cb410b12;
+  font-size: 15px;
+  border-radius: 1.5rem;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+	border-radius: 1.5rem;
+}
+
+.img-text {
+    padding: 1em;
+    margin: auto;
+  }
+
+.text-block {
+  padding: 2em 2em 2em 2em;
+  p {
+    margin: auto
+  }
+}
+
+.text-block + .text-block {
+  margin-top: 2rem;
+}
+
+
+p {
+  margin: 0;
+}
+
+h1, .h1, h2, .h2 {
+	opacity: .9;
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}

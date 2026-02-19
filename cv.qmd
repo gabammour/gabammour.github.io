@@ -1,94 +1,43 @@
 ---
-title: "{{< animate pulse `Curriculum Vitae` repeat=infinite duration=2s >}}"
-page-layout: article
-toc: false
+    title: ""
+    date: "2026-01-30"
+    format: 
+      html: 
+        toc: false
+    engine: knitr
+    freeze: false    
+    slides:
+       pdf: "CV_2026.pdf"  
 ---
 
-## Education
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
 
-2022 / 2025 - [Master in Applied Econometrics](https://sites.google.com/view/master-ecap/accueil) - *Nantes Université*
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-- Master 2 
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
 
-  - Internship - Analyse des données historiques des allocataires du RSA, *Département de la Loire Atlantique* 
-    
-- Gap year
-  
-  -   DU Design Factory[^1] - *Polytech Nantes*, *Nantes Université*, *L'École de Design Nantes Atlantique*
-
-  -   Civic Service Engagement - *Crous de Nantes*
-
-- Master 1
-  
-  -   Master's thesis - *Using the health belief model to assess the willingness to pay for urban heat island mitigation measures : The case of a Miyawaki micro-forest in Nantes*
-  
-  -   Internship - *Optimizing the technicals and economicals performances of an offshore wind farm producing hydrogen through electrolysis* - *LEMNA*
-
-2019 / 2022 - [Bachelor in economics and management](https://iae.univ-nantes.fr/nos-formations/offre-de-formation/licence-economie-et-gestion) - *Nantes Université*
-
-  -   Student exchange program at [*Université de Sherbrooke*](https://www.usherbrooke.ca/)
-
-## Experience
-
-Film festival jury member - [*UNIVERCINÉ Nantes*](https://www.univercine-nantes.org/)
-<!-- 07, 2024 / 08, 2024 -  -->
-
-Waiter - [*Plage Goéland*](https://www.plagegoeland.com/)
-
-<!-- 09, 2023 / 04, 2024 -  -->
-
-Civic Service Engagement - *Crous de Nantes*
-
-<!-- 02, 2024 -  -->
-
-Tutor for [*la nuit blanche des chercheurs.es*](https://nbc.univ-nantes.fr/) - *Nantes Université*
-
-<!-- 01, 2024 -  -->
-
-Europathon - Changement climatique et paix civile en Europe[^2] - *Centre d'excellence Jean Monnet UniPaix*
-
-<!-- 10, 2023 -  -->
-
-Sales and leafleting for a symphonic music concert - [*Orchestre National des Pays de la Loire (ONPL)*](https://onpl.fr/)
-
-<!-- 06, 2023 / 08, 2023 -  -->
-
-Research internship on hydrogene production through electrolysis[^3] - [*Laboratoire d'Économie et de Management Nantes-Atlantique*](https://lemna.univ-nantes.fr/)
-
-<!-- 06, 2022 / 08, 2022 -  -->
-
-Warehouse worker - [*Hydrokit*](https://www.hydrokit.com/)
-
-
-## Skills
-
-### Code 
-
--   R
--   Python
--   Stata
--   $\LaTeX$
-
-### Softwares
-
-- RStudio 
-- VSCode  
-- QGIS 
-- Zotero
-- Overleaf
-
-## Languages
-
-French - Native thong
-
-English - [TOEIC®](documents/TOEIC_2024.pdf) Listening and Reading test : A 975/990 score proof of C1 level according to CEFR
-
-<!-- Footnotes  -->
-
-[^1]: [Design Factory](posts/design_factory/index.qmd)
-
-[^2]: [Europathon - A creative marathon on climate change and civil peace](posts/europathon/index.qmd)
-
-[^3]: [Optimisation des performances technico-économiques d’une ferme éolienne offshore produisant de l’hydrogène à l’aide d’électrolyse](posts/lemna_M1/index.qmd)
-
-
+```{=html}
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$slides$pdf`" style="border: 0.5px"></iframe>
+</div>
+```
