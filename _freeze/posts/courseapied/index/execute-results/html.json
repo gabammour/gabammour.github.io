@@ -1,0 +1,14 @@
+{
+  "hash": "e94a2b14235e7aa52087e877632b197c",
+  "result": {
+    "markdown": "--- \n    title: \"La course à pied à l'ère de l'anthropocène\"\n    author: \"Gabriel Ammour\"\n    date: \"2025-02-21\"\n    format:\n        html:\n            toc: false\n    engine: knitr\n    draft: true\n---\n\n\nLa course à pied est probablement le sport le plus vieux du monde pour la simple et bonne raison que courir n'est pas un sport. Nos ancêtres couraient pour se déplacer, se nourrir ou encore se cacher mais probablement pas pour se dépenser après une journée passé assis sur une chaise derrière un écran.\n\nAujourd'hui, la course à pied est l'un des sports les plus populaire du monde et son développement est étroitement lié avec l'anthropocène. \n\nOrigine du marathon, est ce la premiere épreuve sportive ? \nCourse à pied et béton / revetement \n\nPrendre l'avion pour participer à des courses à l'autre bout du monde. \n\nL'accélération de la mode de la course à pied à l'ère des réseaux\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

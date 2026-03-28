@@ -11,6 +11,10 @@ Bonne lecture...
 
 ## 2026
 
+![**Le démon de la colline aux loups**, Dimitri Rouchon-Borie](demon.jpg){width="10%" fig-align="left"}
+
+![**Technopolitique: Comment la technologie fait de nous des soldats**, Asma Mhalla ](technopolitique.jpg){width="10%" fig-align="left"}
+
 ![**Géopolitique du numérique : L'impérialisme à pas de géants**, Ophélie Coelho](geopolitque_du_numerique.jpg){width="10%" fig-align="left"}
 
 ![**Les besoins artificiels : Comment sortir du consumérisme**, Razmig Keucheyan](consumérisme.jpg){width="10%" fig-align="left"}
