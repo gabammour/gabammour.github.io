@@ -22,12 +22,12 @@ title: ""
 
 \
 
-Diplômé d'un Master d'Économétrie Appliquée, j'occupe actuellement le poste de Chargé d'études statistiques / Data Analyst au sein de la [Direction Prospective](https://observatoire.loire-atlantique.fr/44/accueil/j_6) du Département de Loire-Atlantique.
+Diplômé d'un Master d'Économétrie Appliquée et fort d'un an d'expérience au sein de la [Direction Prospective](https://observatoire.loire-atlantique.fr/44/accueil/j_6) du Département de Loire-Atlantique, je suis actuellement à la recherche d'un poste de Chargé d'études statistiques / Data Analyst dans la fonction publique. 
 
-\
 
-→ N'hésite pas à consulter mon [blog](index.qmd)  
-→ Ma [bibliothèque](posts/books/)
+
+<!-- → N'hésite pas à consulter mon [blog](index.qmd)   -->
+<!-- → Ma [bibliothèque](posts/books/) -->
 
 :::
 

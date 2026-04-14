@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/books/index.html",
       "/posts/NLP/index.html",
       "/posts/spatial/index.html",
       "/posts/nvidia/index.html",

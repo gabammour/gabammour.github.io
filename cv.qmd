@@ -7,7 +7,7 @@
     engine: knitr
     freeze: false    
     slides:
-       pdf: "CV_2026.pdf"  
+       pdf: "cv_gabrielammour.pdf"  
 ---
 
 ```{css, echo=FALSE}
